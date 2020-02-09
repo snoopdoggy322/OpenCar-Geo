@@ -2,21 +2,22 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-    android:paddingLeft="@dimen/dp16"
-    android:paddingRight="@dimen/dp16">
+    android:paddingLeft="@dimen/dp4"
+    android:paddingRight="@dimen/dp4">
 
     <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="@dimen/dp48"
-        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp48"
         android:layout_marginTop="@dimen/dp4"
-        android:layout_marginBottom="@dimen/dp4">
+        android:layout_marginBottom="@dimen/dp4"
+        android:gravity="center_vertical">
 
         <Button
             android:id="@+id/filterButton"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="@dimen/dp144"
             android:layout_height="@dimen/dp48"
             android:layout_alignParentLeft="true"
@@ -41,7 +42,7 @@
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.MapFragment"
         android:layout_width="match_parent"
-        android:layout_height="302dp"
+        android:layout_height="532dp"
         android:layout_marginTop="@dimen/dp4" />
 
     <TextView

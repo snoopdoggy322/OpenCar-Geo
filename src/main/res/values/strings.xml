@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-    <string name="app_name">OpenCar-Geo</string>
+    <string name="app_name">OpenCar</string>
     <string name="browsing_category_page_title">Browsing category: %s</string>
     <string name="default_browsing_category_page_title">Browsing selected category</string>
     <string name="edit_query_field_hint">Enter the query here</string>

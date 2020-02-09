@@ -57,6 +57,7 @@ public class MapShowActivity extends Activity implements GoogleApiClient.Connect
   @Override
   public void onCreate( Bundle savedInstanceState )
   {
+    getActionBar().hide();
     super.onCreate( savedInstanceState );
     setContentView( R.layout.map_show );
 
@@ -159,6 +160,7 @@ googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
     Toast.makeText(MapShowActivity.this,marker.getTitle(),Toast.LENGTH_SHORT).show();
       TextView headerTitle = (TextView) findViewById(R.id.textView4);
     headerTitle.setText(marker.getSnippet());
+    headerTitle.setText(getTheme().toString());
     return false;
   }
 });

@@ -48,10 +48,11 @@
         <activity android:name=".RegisterActivity"></activity>
         <activity android:name=".LoginResult"></activity>
         <service android:name="com.backendless.AndroidService" />
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBxPHRqrxgDP0qoKpLStPNtLp_Otl3r6JY" />
+
+
     </application>
 </manifest>
                         
