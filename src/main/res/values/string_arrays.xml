@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="geo_units">
+        <item>METERS</item>
+        <item>MILES</item>
+        <item>YARDS</item>
+        <item>KILOMETERS</item>
+        <item>FEET</item>
+    </string-array>
+</resources>
+                

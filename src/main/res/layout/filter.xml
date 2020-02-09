@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/dp16"
+    android:paddingLeft="@dimen/dp16">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp48"
+        android:id="@+id/categoryTitle"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="@dimen/text_large"
+        android:paddingBottom="@dimen/dp4"
+        android:text="@string/default_browsing_category_page_title"
+        android:maxHeight="@dimen/dp48" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:text="@string/query_prompt"
+        android:textSize="@dimen/text_medium"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/dp4"
+        android:paddingBottom="@dimen/dp4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:paddingTop="@dimen/dp4"
+        android:paddingBottom="@dimen/dp4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/queryText"
+            android:textSize="@dimen/text_medium"
+            android:background="@android:color/darker_gray"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/queryEditButton"
+            android:layout_marginRight="@dimen/dp4"
+            android:minHeight="@dimen/dp48"
+            android:layout_alignTop="@+id/queryEditButton" />
+
+        <Button
+            android:layout_width="@dimen/dp96"
+            android:layout_height="@dimen/dp48"
+            android:text="@string/edit_button_text"
+            android:id="@+id/queryEditButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dp4" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:text="@string/search_in_prompt"
+        android:textSize="@dimen/text_medium"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/dp4"
+        android:paddingBottom="@dimen/dp4" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp4"
+        android:paddingBottom="@dimen/dp4">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/dp4">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/map_boundaries_text"
+                android:id="@+id/mapBoundariesRadio"
+                android:textSize="@dimen/text_medium"
+                android:checked="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radius_text"
+                android:id="@+id/radiusRadio"
+                android:textSize="@dimen/text_medium" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="@dimen/dp48"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_radius"
+            android:id="@+id/radiusEdit"
+            android:layout_gravity="bottom"
+            android:numeric="decimal"
+            android:paddingLeft="@dimen/dp4"
+            android:paddingRight="@dimen/dp4"
+            android:gravity="center_horizontal"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_medium" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/geoUnitsSpinner"
+            android:layout_gravity="bottom"
+            android:paddingLeft="@dimen/dp4" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="@dimen/dp4">
+
+        <Button
+            android:layout_width="@dimen/dp144"
+            android:layout_height="@dimen/dp48"
+            android:text="@string/clear_filter_button_text"
+            android:id="@+id/clearButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/applyButton"
+            android:textSize="@dimen/text_medium" />
+
+        <Button
+            android:layout_width="@dimen/dp144"
+            android:layout_height="@dimen/dp48"
+            android:text="@string/apply_filter_button_text"
+            android:id="@+id/applyButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/text_medium"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

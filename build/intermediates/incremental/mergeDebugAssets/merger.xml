@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\Ucheba\diplom\OpenCar-Geo\src\main\assets"/><source path="D:\Ucheba\diplom\OpenCar-Geo\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\Ucheba\diplom\OpenCar-Geo\src\debug\assets"/></dataSet></merger>

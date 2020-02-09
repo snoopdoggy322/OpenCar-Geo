@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dp16"
+    android:paddingRight="@dimen/dp16">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:id="@+id/categoryTitle"
+        android:textSize="@dimen/text_large"
+        android:paddingBottom="@dimen/dp4"
+        android:text="@string/default_browsing_category_page_title"
+        android:gravity="center"
+        android:textIsSelectable="false" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/queryEdit"
+        android:gravity="left|top"
+        android:inputType="text"
+        android:focusable="true"
+        android:paddingTop="@dimen/dp4"
+        android:hint="@string/edit_query_field_hint" />
+</LinearLayout>
