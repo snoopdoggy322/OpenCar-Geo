@@ -7,14 +7,19 @@ import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.text.Layout;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.support.v7.widget.Toolbar;
 
 import com.backendless.Backendless;
+import com.backendless.BackendlessUser;
+import com.backendless.UserService;
 import com.backendless.geo.BackendlessGeoQuery;
 import com.backendless.geo.GeoPoint;
 import com.backendless.geo.Units;
@@ -28,18 +33,28 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-
+import com.mikepenz.iconics.typeface.FontAwesome;
+import com.mikepenz.materialdrawer.Drawer;
+import com.mikepenz.materialdrawer.model.DividerDrawerItem;
+import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
+import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
+import com.mikepenz.materialdrawer.model.SectionDrawerItem;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class MapShowActivity extends Activity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener,
+public class MapShowActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener,
         LocationListener, ActivityCompat.OnRequestPermissionsResultCallback
 {
+
+  static final String userInfo_key = "BackendlessUserInfo";
+  static final String logoutButtonState_key = "LogoutButtonState";
+
   private TextView categoryTitle;
   private Button showAsTextButton, filterButton;
 
@@ -49,7 +64,7 @@ public class MapShowActivity extends Activity implements GoogleApiClient.Connect
   private final LatLng mDefaultLocation = new LatLng(44.587930, 33.540463);
   private Location mLastKnownLocation;
   public static GoogleApiClient mGoogleApiClient;
-
+  private Drawer.Result drawerResult = null;
   public static boolean searchInRadius = true;
   public static double radius=50;
   public static Units units= Units.KILOMETERS;
@@ -57,9 +72,34 @@ public class MapShowActivity extends Activity implements GoogleApiClient.Connect
   @Override
   public void onCreate( Bundle savedInstanceState )
   {
-    getActionBar().hide();
     super.onCreate( savedInstanceState );
     setContentView( R.layout.map_show );
+
+    String userData =Backendless.UserService.CurrentUser().getProperty("name").toString();
+
+
+    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+    setSupportActionBar(toolbar);
+    getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    drawerResult = new Drawer()
+            .withActivity(this)
+            .withToolbar(toolbar)
+            .withActionBarDrawerToggle(true)
+            .withHeader(R.layout.drawer_header)
+            .addDrawerItems(
+
+                    new PrimaryDrawerItem().withName(userData).withIcon(FontAwesome.Icon.faw_edit).withBadge("1").withIdentifier(1),
+                    new PrimaryDrawerItem().withName(R.string.drawer_item_free_play).withIcon(FontAwesome.Icon.faw_gamepad),
+                    new PrimaryDrawerItem().withName(R.string.drawer_item_custom).withIcon(FontAwesome.Icon.faw_eye).withBadge("6").withIdentifier(2),
+                    new SectionDrawerItem().withName(R.string.drawer_item_settings),
+                    new SecondaryDrawerItem().withName(R.string.drawer_item_help).withIcon(FontAwesome.Icon.faw_cog),
+                    new SecondaryDrawerItem().withName(R.string.drawer_item_open_source).withIcon(FontAwesome.Icon.faw_question).setEnabled(false),
+                    new DividerDrawerItem(),
+                    new SecondaryDrawerItem().withName(R.string.drawer_item_contact).withIcon(FontAwesome.Icon.faw_github).withBadge("12+").withIdentifier(1)
+            )
+
+            .build();
+
 
     if( category.isEmpty() )
     {
@@ -143,6 +183,7 @@ public class MapShowActivity extends Activity implements GoogleApiClient.Connect
 
               googleMap.addMarker( new MarkerOptions().position( new LatLng( geoPoint.getLatitude(), geoPoint.getLongitude() ) )
                       .snippet(snip)
+                      .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon))
                       .title( "ObjectId: " + geoPoint.getObjectId())
               )
               ;
@@ -160,8 +201,8 @@ googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
     Toast.makeText(MapShowActivity.this,marker.getTitle(),Toast.LENGTH_SHORT).show();
       TextView headerTitle = (TextView) findViewById(R.id.textView4);
     headerTitle.setText(marker.getSnippet());
-    headerTitle.setText(getTheme().toString());
-    return false;
+    setMapHeight(-1);
+      return false;
   }
 });
 
@@ -174,12 +215,22 @@ googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
       }
     } );
   }
-
   public static Location getLastLocation(Context ctx)
   {
     return LocationServices.FusedLocationApi.getLastLocation( mGoogleApiClient );
 
   }
+public  void setMapHeight(int re){
+  LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) findViewById(R.id.map).getLayoutParams(); // получаем параметры
+    if(re==-1) {
+      params.height = 750; // меняем высоту
+    }
+    else
+  params.height=params.MATCH_PARENT;
+
+findViewById(R.id.map).setLayoutParams(params);
+
+}
 
   private void initUI()
   {
@@ -216,6 +267,19 @@ googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
     LocationRequest mLocationRequest = new LocationRequest();
     LocationServices.FusedLocationApi.requestLocationUpdates( mGoogleApiClient, mLocationRequest, this );
     mLastKnownLocation= MapShowActivity.getLastLocation(this);;
+  }
+
+  @Override
+  public void onBackPressed() {
+    if(drawerResult.isDrawerOpen()){
+      drawerResult.closeDrawer();
+    }
+    if (findViewById(R.id.map).getHeight()==750){
+      setMapHeight(1);
+    }
+    else{
+      super.onBackPressed();
+    }
   }
 
   @Override

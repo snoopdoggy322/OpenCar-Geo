@@ -17,7 +17,6 @@ import com.backendless.exceptions.BackendlessFault;
 public class LoginResult extends Activity {
 	static final String userInfo_key = "BackendlessUserInfo";
 	static final String logoutButtonState_key = "LogoutButtonState";
-
 	private EditText backendlessUserInfo;
 	private Button bkndlsLogoutButton;
 

@@ -27,7 +27,7 @@
         android:name="com.examples.opencar.geo.permission.MAPS_RECEIVE"
         android:required="false" />
 
-    <application android:label="@string/app_name">
+    <application android:label="@string/app_name" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />

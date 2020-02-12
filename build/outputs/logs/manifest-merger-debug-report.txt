@@ -4,9 +4,12 @@ ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:3:1-57:12
 INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:3:1-57:12
 INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:3:1-57:12
 INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:3:1-57:12
+MERGED from [com.mikepenz.materialdrawer:library:0.9.5] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\library-0.9.5.aar\5c2ab45825252e73125436c223598e7a\AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ea6a19d9d58a21175394f89289a6981c\AndroidManifest.xml:17:1-31:12
 MERGED from [com.google.android.gms:play-services-maps:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.2.aar\f7cdd6c908d3e87e7c2433b0613be951\AndroidManifest.xml:16:1-25:12
 MERGED from [com.google.android.gms:play-services-location:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.2.aar\3bdf303139c7000f0a0d2e38e49662ae\AndroidManifest.xml:2:1-5:12
+MERGED from [com.android.support:cardview-v7:21.0.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\cardview-v7-21.0.3.aar\faa488b43ba5b43c1c6d2caff4bee931\AndroidManifest.xml:14:4-17:12
+MERGED from [com.android.support:recyclerview-v7:21.0.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-21.0.3.aar\dbb809beef07bb6d65bb6cf37264c239\AndroidManifest.xml:14:4-20:12
 MERGED from [com.google.android.gms:play-services-base:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.2.aar\b434557880db6a8d66bb3be219da3715\AndroidManifest.xml:16:1-21:12
 MERGED from [com.google.android.gms:play-services-tasks:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.2.aar\afadc8ebff68aabb574315289da25e5c\AndroidManifest.xml:2:1-5:12
 MERGED from [com.google.android.gms:play-services-basement:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.2.aar\07af563ef9b3a6b6a183208ce88837d9\AndroidManifest.xml:16:1-23:12
@@ -20,6 +23,7 @@ MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Vlad\.gra
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\91b39b33dd83bbebb037c3a81eb540ad\AndroidManifest.xml:17:1-31:12
 MERGED from [com.google.android.gms:play-services-maps-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.4.2.aar\ffb2f1b0d8a6aea9afb7c4faf39f2ad4\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-location-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.4.2.aar\b035e43b16f4b9983eb6c4d5b67e8a4f\AndroidManifest.xml:2:1-6:12
+MERGED from [com.mikepenz.iconics:library:0.7.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\library-0.7.3.aar\aa59a5e547fae471185069fcea9eb418\AndroidManifest.xml:2:1-12:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1167431860df0ac1ae9801ecd5b9eb66\AndroidManifest.xml:17:1-30:12
 MERGED from [com.google.android.gms:play-services-base-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.4.2.aar\022ee68959ab33ecd72fe3e6f6898075\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-basement-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.4.2.aar\879678aeafdcd3259c614364be651c75\AndroidManifest.xml:2:1-6:12
@@ -45,12 +49,18 @@ uses-sdk
 ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:6:5-8:41
 INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:6:5-8:41
 INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:6:5-8:41
+MERGED from [com.mikepenz.materialdrawer:library:0.9.5] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\library-0.9.5.aar\5c2ab45825252e73125436c223598e7a\AndroidManifest.xml:8:5-10:41
+MERGED from [com.mikepenz.materialdrawer:library:0.9.5] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\library-0.9.5.aar\5c2ab45825252e73125436c223598e7a\AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ea6a19d9d58a21175394f89289a6981c\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ea6a19d9d58a21175394f89289a6981c\AndroidManifest.xml:21:5-23:78
 MERGED from [com.google.android.gms:play-services-maps:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.2.aar\f7cdd6c908d3e87e7c2433b0613be951\AndroidManifest.xml:23:5-43
 MERGED from [com.google.android.gms:play-services-maps:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.2.aar\f7cdd6c908d3e87e7c2433b0613be951\AndroidManifest.xml:23:5-43
 MERGED from [com.google.android.gms:play-services-location:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.2.aar\3bdf303139c7000f0a0d2e38e49662ae\AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-location:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.2.aar\3bdf303139c7000f0a0d2e38e49662ae\AndroidManifest.xml:3:5-43
+MERGED from [com.android.support:cardview-v7:21.0.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\cardview-v7-21.0.3.aar\faa488b43ba5b43c1c6d2caff4bee931\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:cardview-v7:21.0.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\cardview-v7-21.0.3.aar\faa488b43ba5b43c1c6d2caff4bee931\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:recyclerview-v7:21.0.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-21.0.3.aar\dbb809beef07bb6d65bb6cf37264c239\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:recyclerview-v7:21.0.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-21.0.3.aar\dbb809beef07bb6d65bb6cf37264c239\AndroidManifest.xml:15:5-42
 MERGED from [com.google.android.gms:play-services-base:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.2.aar\b434557880db6a8d66bb3be219da3715\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-base:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.2.aar\b434557880db6a8d66bb3be219da3715\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-tasks:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.2.aar\afadc8ebff68aabb574315289da25e5c\AndroidManifest.xml:3:5-43
@@ -77,6 +87,8 @@ MERGED from [com.google.android.gms:play-services-maps-license:11.4.2] C:\Users\
 MERGED from [com.google.android.gms:play-services-maps-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.4.2.aar\ffb2f1b0d8a6aea9afb7c4faf39f2ad4\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-location-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.4.2.aar\b035e43b16f4b9983eb6c4d5b67e8a4f\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-location-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.4.2.aar\b035e43b16f4b9983eb6c4d5b67e8a4f\AndroidManifest.xml:4:5-43
+MERGED from [com.mikepenz.iconics:library:0.7.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\library-0.7.3.aar\aa59a5e547fae471185069fcea9eb418\AndroidManifest.xml:8:5-10:41
+MERGED from [com.mikepenz.iconics:library:0.7.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\library-0.7.3.aar\aa59a5e547fae471185069fcea9eb418\AndroidManifest.xml:8:5-10:41
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1167431860df0ac1ae9801ecd5b9eb66\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1167431860df0ac1ae9801ecd5b9eb66\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-base-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.4.2.aar\022ee68959ab33ecd72fe3e6f6898075\AndroidManifest.xml:4:5-43
@@ -153,6 +165,10 @@ MERGED from [com.google.android.gms:play-services-maps:11.4.2] C:\Users\Vlad\.gr
 MERGED from [com.google.android.gms:play-services-maps:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.2.aar\f7cdd6c908d3e87e7c2433b0613be951\AndroidManifest.xml:24:5-19
 MERGED from [com.google.android.gms:play-services-location:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.2.aar\3bdf303139c7000f0a0d2e38e49662ae\AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-location:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.2.aar\3bdf303139c7000f0a0d2e38e49662ae\AndroidManifest.xml:4:5-19
+MERGED from [com.android.support:cardview-v7:21.0.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\cardview-v7-21.0.3.aar\faa488b43ba5b43c1c6d2caff4bee931\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:cardview-v7:21.0.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\cardview-v7-21.0.3.aar\faa488b43ba5b43c1c6d2caff4bee931\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:recyclerview-v7:21.0.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-21.0.3.aar\dbb809beef07bb6d65bb6cf37264c239\AndroidManifest.xml:17:5-19:19
+MERGED from [com.android.support:recyclerview-v7:21.0.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-21.0.3.aar\dbb809beef07bb6d65bb6cf37264c239\AndroidManifest.xml:17:5-19:19
 MERGED from [com.google.android.gms:play-services-base:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.2.aar\b434557880db6a8d66bb3be219da3715\AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.android.gms:play-services-base:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.2.aar\b434557880db6a8d66bb3be219da3715\AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.android.gms:play-services-tasks:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.2.aar\afadc8ebff68aabb574315289da25e5c\AndroidManifest.xml:4:5-19
@@ -189,6 +205,8 @@ MERGED from [com.google.android.gms:play-services-tasks-license:11.4.2] C:\Users
 MERGED from [com.google.android.gms:play-services-tasks-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.4.2.aar\c2c3ba206f02c7f28333d60c778dcb4c\AndroidManifest.xml:5:5-20
 	android:label
 		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:30:18-50
+	android:theme
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:30:51-107
 meta-data#com.google.android.gms.version
 ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:31:9-33:69
 MERGED from [com.google.android.gms:play-services-basement:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.2.aar\07af563ef9b3a6b6a183208ce88837d9\AndroidManifest.xml:20:9-121
@@ -275,6 +293,12 @@ MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Vlad\.gradle\ca
 		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ea6a19d9d58a21175394f89289a6981c\AndroidManifest.xml:28:13-35
 	android:name
 		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ea6a19d9d58a21175394f89289a6981c\AndroidManifest.xml:27:13-51
+activity#android.support.v7.widget.TestActivity
+ADDED from [com.android.support:recyclerview-v7:21.0.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-21.0.3.aar\dbb809beef07bb6d65bb6cf37264c239\AndroidManifest.xml:18:9-115
+	android:label
+		ADDED from [com.android.support:recyclerview-v7:21.0.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-21.0.3.aar\dbb809beef07bb6d65bb6cf37264c239\AndroidManifest.xml:18:19-59
+	android:name
+		ADDED from [com.android.support:recyclerview-v7:21.0.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-21.0.3.aar\dbb809beef07bb6d65bb6cf37264c239\AndroidManifest.xml:18:60-113
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.2.aar\b434557880db6a8d66bb3be219da3715\AndroidManifest.xml:19:9-172
 	android:exported

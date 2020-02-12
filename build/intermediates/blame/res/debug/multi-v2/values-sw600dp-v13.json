@@ -4,6 +4,23 @@
             "outputFile": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-1\\files-1.1\\library-0.9.5.aar\\5c2ab45825252e73125436c223598e7a\\res\\values-sw600dp-v13\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "217",
+                        "endColumns": "63",
+                        "endOffsets": "276"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "611",
+                        "endColumns": "63",
+                        "endOffsets": "670"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\ea6a19d9d58a21175394f89289a6981c\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
