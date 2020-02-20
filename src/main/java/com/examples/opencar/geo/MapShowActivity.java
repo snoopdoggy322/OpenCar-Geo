@@ -45,6 +45,7 @@ import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SectionDrawerItem;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -56,7 +57,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
   static final String logoutButtonState_key = "LogoutButtonState";
 
   private TextView categoryTitle;
-  private Button showAsTextButton, filterButton;
+  private Button showAsTextButton, filterButton , reserveButton;
 
   public static String whereClause = "";
   public static String category = "";
@@ -69,6 +70,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
   public static double radius=50;
   public static Units units= Units.KILOMETERS;
   public FusedLocationProviderClient mFusedLocationProviderClient;
+  public Object currentMarker=null;
   @Override
   public void onCreate( Bundle savedInstanceState )
   {
@@ -176,10 +178,16 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
 
             for( GeoPoint geoPoint : geoPoints )
             {
-              String snip="";
-              for (Map.Entry entry : geoPoint.getMetadata().entrySet())
+              String snip="NO DATA";
+              for (Map.Entry entry : geoPoint.getMetadata().entrySet()){
                 snip+=entry.getKey() + " - " + entry.getValue();
 
+              }
+             HashMap carMap =(HashMap) geoPoint.getMetadata();
+              if (carMap.get("CarData")!=null){
+              HashMap[] carDataMap= (HashMap[]) carMap.get("CarData");
+              snip= (String) carDataMap[0].toString();
+              }
 
               googleMap.addMarker( new MarkerOptions().position( new LatLng( geoPoint.getLatitude(), geoPoint.getLongitude() ) )
                       .snippet(snip)
@@ -202,6 +210,7 @@ googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
       TextView headerTitle = (TextView) findViewById(R.id.textView4);
     headerTitle.setText(marker.getSnippet());
     setMapHeight(-1);
+    currentMarker=marker.getSnippet();
       return false;
   }
 });
@@ -223,7 +232,7 @@ googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
 public  void setMapHeight(int re){
   LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) findViewById(R.id.map).getLayoutParams(); // получаем параметры
     if(re==-1) {
-      params.height = 750; // меняем высоту
+      params.height = 900; // меняем высоту
     }
     else
   params.height=params.MATCH_PARENT;
@@ -238,7 +247,7 @@ findViewById(R.id.map).setLayoutParams(params);
     categoryTitle = (TextView) findViewById( R.id.categoryTitle );
     showAsTextButton = (Button) findViewById( R.id.showAsTextButton );
     filterButton = (Button) findViewById( R.id.filterButton );
-
+    reserveButton =(Button) findViewById(R.id.reserveButton);
     String title = String.format( getResources().getString( R.string.browsing_category_page_title ), MapShowActivity.category );
 //    categoryTitle.setText( title );
 
@@ -259,6 +268,14 @@ findViewById(R.id.map).setLayoutParams(params);
         startActivity( new Intent( MapShowActivity.this, FilterActivity.class ) );
       }
     } );
+    reserveButton.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        Intent Intent=new Intent(MapShowActivity.this,ReserveActivity.class);
+        Intent.putExtra("currentMarker",currentMarker.toString());
+        startActivity(Intent);
+      }
+    });
   }
 
   @Override
@@ -274,7 +291,7 @@ findViewById(R.id.map).setLayoutParams(params);
     if(drawerResult.isDrawerOpen()){
       drawerResult.closeDrawer();
     }
-    if (findViewById(R.id.map).getHeight()==750){
+    if (findViewById(R.id.map).getHeight()==900){
       setMapHeight(1);
     }
     else{

@@ -66,7 +66,7 @@ public class GeoCategoriesListActivity extends Activity
   {
     geoCategoriesListView = (ListView) findViewById( R.id.geoCategoriesList );
     Intent mapIntent = new Intent( GeoCategoriesListActivity.this, MapShowActivity.class );
-    mapIntent.putExtra( "category","geoservice_sample" );
+    mapIntent.putExtra( "category","readyCars" );
     startActivity( mapIntent );
     finish();
     geoCategoriesListView.setOnItemClickListener( new AdapterView.OnItemClickListener()
