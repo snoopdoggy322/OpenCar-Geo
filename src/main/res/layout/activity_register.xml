@@ -36,114 +36,147 @@
 		</LinearLayout>
 
 		<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_marginTop="4dp"
+			android:layout_marginBottom="4dp">
+
+			<TableRow
 				android:layout_width="fill_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="4dp"
-				android:layout_marginBottom="4dp">
-
-			<TableRow
-					android:layout_width="fill_parent"
-					android:layout_height="48dp"
-					android:gravity="center_horizontal">
+				android:layout_height="48dp"
+				android:gravity="center_horizontal">
 
 				<TextView
-						android:layout_width="wrap_content"
-						android:layout_height="48dp"
-						android:text="@string/email_field_prompt"
-						android:paddingRight="4dp"
-						android:gravity="center_vertical|right"
-						android:layout_marginRight="4dp"/>
+					android:layout_width="wrap_content"
+					android:layout_height="48dp"
+					android:layout_marginRight="4dp"
+					android:gravity="center_vertical|right"
+					android:paddingRight="4dp"
+					android:text="@string/email_field_prompt" />
 
 				<EditText
-						android:layout_width="192dp"
-						android:layout_height="48dp"
-						android:id="@+id/emailField"
-						android:layout_marginLeft="4dp"
-						android:gravity="center_vertical"
-						android:inputType="text"/>
+					android:id="@+id/emailField"
+					android:layout_width="192dp"
+					android:layout_height="48dp"
+					android:layout_marginLeft="4dp"
+					android:gravity="center_vertical"
+					android:inputType="text" />
 
 			</TableRow>
 
 			<TableRow
-					android:layout_width="fill_parent"
-					android:layout_height="48dp"
-					android:gravity="center_horizontal">
+				android:layout_width="fill_parent"
+				android:layout_height="48dp"
+				android:gravity="center_horizontal">
 
 				<TextView
-						android:layout_width="wrap_content"
-						android:layout_height="48dp"
-						android:text="@string/password_field_prompt"
-						android:paddingRight="4dp"
-						android:gravity="center_vertical|right"
-						android:layout_marginRight="4dp"/>
+					android:layout_width="wrap_content"
+					android:layout_height="48dp"
+					android:layout_marginRight="4dp"
+					android:gravity="center_vertical|right"
+					android:paddingRight="4dp"
+					android:text="@string/password_field_prompt" />
 
 				<EditText
 
-						android:layout_width="192dp"
-						android:layout_height="48dp"
-						android:id="@+id/passwordField"
-						android:layout_marginLeft="4dp"
-						android:gravity="center_vertical"
-						android:password="true"
-						android:inputType="text"/>
+					android:id="@+id/passwordField"
+					android:layout_width="192dp"
+					android:layout_height="48dp"
+					android:layout_marginLeft="4dp"
+					android:gravity="center_vertical"
+					android:inputType="text"
+					android:password="true" />
 
 			</TableRow>
 
 			<TableRow
-					android:layout_width="fill_parent"
-					android:layout_height="48dp"
-					android:gravity="center_horizontal">
+				android:layout_width="fill_parent"
+				android:layout_height="48dp"
+				android:gravity="center_horizontal">
 
 				<TextView
-						android:layout_width="wrap_content"
-						android:layout_height="48dp"
-						android:text="@string/name_field_prompt"
-						android:paddingRight="4dp"
-						android:gravity="center_vertical|right"
-						android:layout_marginRight="4dp"/>
+					android:layout_width="wrap_content"
+					android:layout_height="48dp"
+					android:layout_marginRight="4dp"
+					android:gravity="center_vertical|right"
+					android:paddingRight="4dp"
+					android:text="@string/name_field_prompt"
+					android:textAlignment="viewStart" />
 
 				<EditText
-						android:layout_width="192dp"
-						android:layout_height="48dp"
-						android:id="@+id/nameField"
-						android:layout_marginLeft="4dp"
-						android:gravity="center_vertical"
-						android:inputType="text"/>
+					android:id="@+id/nameField"
+					android:layout_width="192dp"
+					android:layout_height="48dp"
+					android:layout_marginLeft="4dp"
+					android:gravity="center_vertical"
+					android:inputType="text" />
+
+			</TableRow>
+
+			<TableRow
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/dp48">
+
+				<TextView
+					android:id="@+id/textView8"
+					android:layout_width="fill_parent"
+					android:layout_height="@dimen/dp48"
+					android:gravity="right|center_vertical"
+					android:text="Номер телефона:"
+					android:textAlignment="viewEnd" />
+
+				<EditText
+					android:id="@+id/phoneText"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/dp48"
+					android:ems="10"
+					android:inputType="phone" />
+			</TableRow>
+
+			<TableRow
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
 
 			</TableRow>
 
 			<TableRow
 				android:layout_width="match_parent"
-				android:layout_height="match_parent" >
+				android:layout_height="match_parent" />
+
+			<TableRow
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/dp96">
 
 				<TextView
 					android:id="@+id/textView5"
 					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:text="Фото паспорта" />
+					android:layout_height="@dimen/nav_header_height"
+					android:gravity="right|center_vertical"
+					android:text="Фото паспорта:" />
 
 				<ImageButton
 					android:id="@+id/passportButton"
-					android:layout_width="112dp"
-					android:layout_height="104dp"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
 					android:background="@android:drawable/ic_menu_add"
 					app:srcCompat="@android:drawable/ic_input_add" />
 			</TableRow>
 
 			<TableRow
 				android:layout_width="match_parent"
-				android:layout_height="match_parent" >
+				android:layout_height="@dimen/nav_header_height">
 
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Фото водительских прав" />
+				<TextView
+					android:id="@+id/textView6"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/nav_header_height"
+					android:gravity="right|center_vertical"
+					android:text="Фото водительских прав" />
 
 				<ImageButton
 					android:id="@+id/licenseButton"
-					android:layout_width="112dp"
-					android:layout_height="104dp"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
 					android:background="@android:drawable/ic_menu_add"
 					app:srcCompat="@android:drawable/ic_input_add" />
 			</TableRow>

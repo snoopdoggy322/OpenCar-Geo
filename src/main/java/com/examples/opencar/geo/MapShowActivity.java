@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Layout;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -44,6 +45,8 @@ import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SectionDrawerItem;
+import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -77,7 +80,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
     super.onCreate( savedInstanceState );
     setContentView( R.layout.map_show );
 
-    String userData =Backendless.UserService.CurrentUser().getProperty("name").toString();
+    final String userData =Backendless.UserService.CurrentUser().toString();
 
 
     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -87,19 +90,35 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
             .withActivity(this)
             .withToolbar(toolbar)
             .withActionBarDrawerToggle(true)
-            .withHeader(R.layout.drawer_header)
+            //.withHeader(R.layout.drawer_header)
             .addDrawerItems(
 
-                    new PrimaryDrawerItem().withName(userData).withIcon(FontAwesome.Icon.faw_edit).withBadge("1").withIdentifier(1),
-                    new PrimaryDrawerItem().withName(R.string.drawer_item_free_play).withIcon(FontAwesome.Icon.faw_gamepad),
-                    new PrimaryDrawerItem().withName(R.string.drawer_item_custom).withIcon(FontAwesome.Icon.faw_eye).withBadge("6").withIdentifier(2),
+                    new PrimaryDrawerItem().withName("Профиль").withIcon(FontAwesome.Icon.faw_edit).withBadge("1").withIdentifier(1),
+                    new PrimaryDrawerItem().withName("Кошелёк").withIcon(FontAwesome.Icon.faw_money).withIdentifier(2),
+                    new PrimaryDrawerItem().withName(R.string.drawer_item_custom).withIcon(FontAwesome.Icon.faw_eye).withBadge("6").withIdentifier(3),
                     new SectionDrawerItem().withName(R.string.drawer_item_settings),
                     new SecondaryDrawerItem().withName(R.string.drawer_item_help).withIcon(FontAwesome.Icon.faw_cog),
                     new SecondaryDrawerItem().withName(R.string.drawer_item_open_source).withIcon(FontAwesome.Icon.faw_question).setEnabled(false),
                     new DividerDrawerItem(),
                     new SecondaryDrawerItem().withName(R.string.drawer_item_contact).withIcon(FontAwesome.Icon.faw_github).withBadge("12+").withIdentifier(1)
             )
+          .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
+              if (drawerItem.getIdentifier()==1) {
+                Intent Intent=new Intent(MapShowActivity.this,userDataActivity.class);
+                Intent.putExtra("userData",userData);
+                startActivity(Intent);
 
+              }
+              if (drawerItem.getIdentifier()==2) {
+                Intent Intent=new Intent(MapShowActivity.this,ValletActivity.class);
+                Intent.putExtra("userData",userData);
+                startActivity(Intent);
+
+              }
+            }
+          })
             .build();
 
 

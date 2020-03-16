@@ -4,6 +4,7 @@ package com.examples.opencar.geo;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -11,6 +12,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -33,12 +35,14 @@ public class RegisterActivity extends Activity {
 	private EditText nameField;
 	private EditText emailField;
 	private EditText passwordField;
+	private EditText phoneField;
 	private Button registerButton;
 	private ImageButton passportButton;
 	private ImageButton licenseButton;
 	private String name;
 	private String email;
 	private String password;
+	private String phone;
 	private Uri PassportUri=null;
 	private Uri licenseUri=null;
 	Bitmap passportImg=null;
@@ -46,6 +50,7 @@ public class RegisterActivity extends Activity {
 	private BackendlessUser user;
 
 	public void onCreate(Bundle savedInstanceState) {
+		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_register);
 
@@ -71,12 +76,13 @@ public class RegisterActivity extends Activity {
 				onPassportButtonClicked();
 			}
 		});
-	licenseButton.setOnClickListener(new View.OnClickListener() {
+		licenseButton.setOnClickListener(new View.OnClickListener() {
 		@Override
 		public void onClick(View v) {
 			onLicenseButtonClicked();
 		}
 	});
+		phoneField = findViewById(R.id.phoneText);
 
 	}
 private void onPassportButtonClicked(){
@@ -135,7 +141,7 @@ private void onLicenseButtonClicked(){
 		String nameText = nameField.getText().toString().trim();
 		String emailText = emailField.getText().toString().trim();
 		String passwordText = passwordField.getText().toString().trim();
-
+		String phoneText = phoneField.getText().toString().trim();
 		if (emailText.isEmpty()) {
 			Toast.makeText(this, "Field 'email' cannot be empty.", Toast.LENGTH_SHORT).show();
 			return;
@@ -149,6 +155,13 @@ private void onLicenseButtonClicked(){
 		else
 			password = passwordText;
 
+
+		if (phoneText.isEmpty()) {
+			Toast.makeText(this, "Заполните номер телефона", Toast.LENGTH_SHORT).show();
+			return;
+		}
+		else
+			phone = phoneText;
 
 		if(PassportUri==null){
 			Toast.makeText(this, "Выберите фото вашего пасспорта", Toast.LENGTH_SHORT).show();
@@ -176,6 +189,9 @@ private void onLicenseButtonClicked(){
 		if (name != null) {
 			user.setProperty("name", name);
 		}
+		if (phone != null) {
+			user.setProperty("phone", phone);
+		}
 		if (PassportUri!=null){
 				Backendless.Files.Android.upload(passportImg,
 										Bitmap.CompressFormat.PNG,
@@ -192,12 +208,12 @@ private void onLicenseButtonClicked(){
 				public void handleFault(BackendlessFault fault) {
 					Toast.makeText( RegisterActivity.this,
 							fault.toString(),
-							Toast.LENGTH_LONG ).show();
+							Toast.LENGTH_LONG).show();
 				}
 			}
 				);
-			user.setProperty("passport", "https://backendlessappcontent.com/9CDA83AE-D089-4AE8-9EB7-0F4A21D360A8/console/xnzzjurugvsgbukvmjrnccpkvinmrumqefku/files/view/passpImages/"
-			+user.getEmail());
+			user.setProperty("passport", "https://backendlessappcontent.com/9CDA83AE-D089-4AE8-9EB7-0F4A21D360A8/2F059F50-9AC3-4D2C-A47C-9918C6ABC5F8/files/passpImages/"
+			+user.getEmail()+".png");
 		}
 		if (licenseUri!=null){
 			Backendless.Files.Android.upload(licenseImg,
@@ -208,18 +224,19 @@ private void onLicenseButtonClicked(){
 					new AsyncCallback<BackendlessFile>() {
 						@Override
 						public void handleResponse(BackendlessFile response) {
+
 						}
 
 						@Override
 						public void handleFault(BackendlessFault fault) {
 							Toast.makeText( RegisterActivity.this,
 									fault.toString(),
-									Toast.LENGTH_SHORT ).show();
+									Toast.LENGTH_LONG ).show();
 						}
 					}
 			);
-			user.setProperty("license", "https://backendlessappcontent.com/9CDA83AE-D089-4AE8-9EB7-0F4A21D360A8/console/xnzzjurugvsgbukvmjrnccpkvinmrumqefku/files/view/licImages/"
-					+user.getEmail());
+				user.setProperty("license", "https://backendlessappcontent.com/9CDA83AE-D089-4AE8-9EB7-0F4A21D360A8/2F059F50-9AC3-4D2C-A47C-9918C6ABC5F8/files/licImages/"
+					+user.getEmail()+".png");
 		}
 
 		Backendless.UserService.register(user, new AsyncCallback<BackendlessUser>() {
@@ -230,8 +247,19 @@ private void onLicenseButtonClicked(){
 
 				AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
 				builder.setMessage(message).setTitle(R.string.registration_success);
+
+				DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						Intent Intent=new Intent(RegisterActivity.this,MainLogin.class);
+						startActivity(Intent);
+					}
+				};
+				builder.setPositiveButton("OK",dialogClickListener);
 				AlertDialog dialog = builder.create();
+
 				dialog.show();
+
 			}
 
 			@Override
