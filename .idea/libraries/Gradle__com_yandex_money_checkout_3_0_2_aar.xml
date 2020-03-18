@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.yandex.money:checkout:3.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e1818e09ed24d10a5ccac92ba6c0670d/jetified-checkout-3.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e1818e09ed24d10a5ccac92ba6c0670d/jetified-checkout-3.0.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yandex.money/checkout/3.0.2/e2ec2a8046bade871f3a95a20001988de2c5a9f/checkout-3.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yandex.money/checkout/3.0.2/39e5d99ad8ee3817c04dc017c9587734bd3a43c0/checkout-3.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

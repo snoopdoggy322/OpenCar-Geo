@@ -1,15 +1,19 @@
 package com.examples.opencar.geo;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 
 import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
 
+import ru.yandex.money.android.sdk.Checkout;
+
+import java.math.BigDecimal;
+import java.util.Currency;
 
 public class ValletActivity extends AppCompatActivity {
 
@@ -34,5 +38,6 @@ public class ValletActivity extends AppCompatActivity {
         nameText.setText(Double.toString(CurrentValue)+" \u20BD");
 
     }
+
 
 }

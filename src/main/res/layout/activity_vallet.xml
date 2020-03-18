@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -19,7 +19,7 @@
             tools:layout_editor_absoluteX="1dp"
             tools:layout_editor_absoluteY="1dp">
 
-            <android.support.v7.widget.Toolbar
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar_back"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
                 android:theme="?attr/actionBarTheme"
                 app:navigationIcon="?attr/actionModeCloseDrawable" />
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dp144"
                 app:cardBackgroundColor="@color/colorPrimary"
@@ -41,9 +41,9 @@
                     android:gravity="center"
                     android:text="TextView"
                     android:textSize="@dimen/dp48" />
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
     </RelativeLayout>
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

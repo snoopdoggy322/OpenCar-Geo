@@ -4,7 +4,7 @@
             "outputFile": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v19\\values-v19.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-1\\files-1.1\\library-0.9.5.aar\\5c2ab45825252e73125436c223598e7a\\res\\values-v19\\values.xml",
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\798762e84521654f8a591c18089e23d5\\jetified-library-0.9.5\\res\\values-v19\\values.xml",
                     "from": {
                         "startLines": "4,7,10",
                         "startColumns": "4,4,4",

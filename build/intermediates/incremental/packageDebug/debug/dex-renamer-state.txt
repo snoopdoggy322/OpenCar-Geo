@@ -1,4 +1,4 @@
-#Sun Mar 15 17:28:40 MSK 2020
+#Thu Mar 19 00:42:07 MSK 2020
 base.0=D\:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 path.1=classes.dex
 renamed.1=classes2.dex

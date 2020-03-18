@@ -4,13 +4,32 @@
             "outputFile": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\ea6a19d9d58a21175394f89289a6981c\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\6784e272fe4a57e2290520e7524c283e\\appcompat-1.0.0\\res\\values-land\\values-land.xml",
                     "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,125,189,260",
-                        "endColumns": "69,63,70,67",
-                        "endOffsets": "120,184,255,323"
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\d077bb499755e6a460c5e57ac47045eb\\material-1.0.0\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "222"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "264",
+                        "endLines": "8",
+                        "endColumns": "10",
+                        "endOffsets": "431"
                     }
                 }
             ]

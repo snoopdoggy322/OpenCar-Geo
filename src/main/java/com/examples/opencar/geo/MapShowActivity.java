@@ -1,26 +1,21 @@
 
 package com.examples.opencar.geo;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.text.Layout;
-import android.util.Log;
+import androidx.core.app.ActivityCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 
 import com.backendless.Backendless;
-import com.backendless.BackendlessUser;
-import com.backendless.UserService;
 import com.backendless.geo.BackendlessGeoQuery;
 import com.backendless.geo.GeoPoint;
 import com.backendless.geo.Units;

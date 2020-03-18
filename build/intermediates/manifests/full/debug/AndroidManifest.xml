@@ -30,7 +30,6 @@
     <application
         android:debuggable="true"
         android:label="@string/app_name"
-        android:testOnly="true"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
         <activity android:name="com.examples.opencar.geo.ValletActivity" />
         <activity android:name="com.examples.opencar.geo.userDataActivity" />
@@ -72,7 +71,49 @@
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.yandex.authsdk.internal.AuthSdkActivity"
+            android:label=""
+            android:theme="@style/Theme.AuthSdk.Transparent" />
+        <activity
+            android:name="com.yandex.authsdk.internal.BrowserLoginActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.yandex.authsdk.internal.WebViewLoginActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@style/Theme.AuthSdk" />
+        <activity
+            android:name="com.yandex.authsdk.internal.BrowserDataActivity"
+            android:theme="@style/Theme.AuthSdk.Transparent" >
+            <intent-filter android:autoVerify="true" >
+                <action android:name="android.intent.action.VIEW" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="yxваш id приложения в Яндекс.Паспорте.oauth.yandex.ru"
+                    android:path="/auth/finish"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:path="/auth/finish"
+                    android:scheme="yxваш id приложения в Яндекс.Паспорте" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.yandex.auth.CLIENT_ID"
+            android:value="ваш id приложения в Яндекс.Паспорте" />
+        <meta-data
+            android:name="com.yandex.auth.OAUTH_HOST"
+            android:value="oauth.yandex.ru" />
         <meta-data
             android:name="android.arch.lifecycle.VERSION"
             android:value="27.0.0-SNAPSHOT" />

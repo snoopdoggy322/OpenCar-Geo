@@ -1,332 +1,545 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-62:12
-MERGED from [com.mikepenz.materialdrawer:library:0.9.5] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\library-0.9.5.aar\5c2ab45825252e73125436c223598e7a\AndroidManifest.xml:2:1-12:12
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ea6a19d9d58a21175394f89289a6981c\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:recyclerview-v7:21.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-21.0.0.aar\6d4dcbc888b17ef2497b5c22dbbb0620\AndroidManifest.xml:14:4-20:12
-MERGED from [com.google.android.gms:play-services-maps:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.2.aar\f7cdd6c908d3e87e7c2433b0613be951\AndroidManifest.xml:16:1-25:12
-MERGED from [com.google.android.gms:play-services-location:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.2.aar\3bdf303139c7000f0a0d2e38e49662ae\AndroidManifest.xml:2:1-5:12
-MERGED from [com.google.android.gms:play-services-base:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.2.aar\b434557880db6a8d66bb3be219da3715\AndroidManifest.xml:16:1-21:12
-MERGED from [com.google.android.gms:play-services-tasks:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.2.aar\afadc8ebff68aabb574315289da25e5c\AndroidManifest.xml:2:1-5:12
-MERGED from [com.google.android.gms:play-services-basement:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.2.aar\07af563ef9b3a6b6a183208ce88837d9\AndroidManifest.xml:16:1-23:12
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\a30c25496c78690f7dcd1cf00a82935f\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\6bbade244fb8d03e765a30b6cb1a324d\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\6cd3b03205768565dbef6f89161a69fa\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\ce3271390e2f1564c6aa77f037477da7\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\b09b3339982988d1f2c304ad4e3e8da1\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a2da270cbc7bf8434c0095029888454b\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\c7c13b9fb9d1fb183448a8f75e725345\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\91b39b33dd83bbebb037c3a81eb540ad\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\c917f9eea906b6b42501fb1d954b3938\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:cardview-v7:21.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\cardview-v7-21.0.0.aar\303988f3e3df9e16ee9dd6046411f6c1\AndroidManifest.xml:14:4-17:12
-MERGED from [com.mikepenz.iconics:library:0.7.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\library-0.7.3.aar\aa59a5e547fae471185069fcea9eb418\AndroidManifest.xml:2:1-12:12
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1167431860df0ac1ae9801ecd5b9eb66\AndroidManifest.xml:17:1-30:12
-MERGED from [com.google.android.gms:play-services-maps-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.4.2.aar\ffb2f1b0d8a6aea9afb7c4faf39f2ad4\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-location-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.4.2.aar\b035e43b16f4b9983eb6c4d5b67e8a4f\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-base-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.4.2.aar\022ee68959ab33ecd72fe3e6f6898075\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.4.2.aar\879678aeafdcd3259c614364be651c75\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-tasks-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.4.2.aar\c2c3ba206f02c7f28333d60c778dcb4c\AndroidManifest.xml:2:1-6:12
-INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-62:12
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-67:12
+MERGED from [com.mikepenz.materialdrawer:library:0.9.5] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\798762e84521654f8a591c18089e23d5\jetified-library-0.9.5\AndroidManifest.xml:2:1-12:12
+MERGED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:22:1-53:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\d077bb499755e6a460c5e57ac47045eb\material-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\6784e272fe4a57e2290520e7524c283e\appcompat-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-wallet:16.0.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\aa9bf64ea90364ee4454f2b23260e00d\jetified-play-services-wallet-16.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5e11758bb745f8db2f1bdde7c44c6b3e\play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\589c59f6bef0d3a413eb907c291a73f2\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\4bae84e0d760a7548f24e27c0532a606\play-services-location-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-identity:16.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\bb00e1a7536ebe7133b7da0cd677c97f\play-services-identity-16.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\767017b07256b24a64ded9cb713958df\play-services-base-17.0.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\2a23028d3edec080cc0af8b4c91f4664\play-services-places-placereport-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\1194c416cb0c95b62b8133be40f19a17\play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\999864b2b84fb144877f6fcea5aee8d7\play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\9fb0da690426deec2ab294599390c00b\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\feef0ca63f63f95851168dfbb59ef5f6\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\24650f69bda29e0b8fd570ccfea4ddfc\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\6fca992d19c985883b1ae18f64e64e55\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\962df82125c170c0437a18027c2fc0de\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5f2455edbbbcdfc2a8db9401b343ff39\vectordrawable-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\55058873ad00df8356bbc77ccdea8036\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\16f0e3037e29fb2d0d4fde243dbf3452\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\082b00f6bd0084ce4331b650b8c0725b\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\4a8104154c8ff137b98b79d23e4653e6\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\41b30a14b15a1204a0642ae172af7907\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\74f60d8f9f7ba687bbb33384f92f8576\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\18f0782935f15d242c11e154fbfd184e\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\9a31e49220a438033b1c5ebad9f95e49\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\1d84600bd92b4375c48aaa1c24f68a59\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\03f9b4d1362c3def7584a7ce27638614\transition-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\70d91b4820d2cd77ec489350183e960e\core-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\233321799ec28c5e2d121181d2b5fb49\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\20df42356517dc7d27eb4e095f2f580b\versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\2f0f45e9ba4c8d2904f8f5ea6bd007b9\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\ab27234a9acfc2c5a4a2cd88c81641df\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\4a3cf6c9912995f98534396feea1dd93\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\366d3c048137d2f60e555627070a2388\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\24c4bb63d5fdd88e3e5e1fc21354bf43\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\fbbc1db1baccc1378bd2c4bc1008963b\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [ru.tinkoff.decoro:decoro:1.3.4] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\65339d5b1bb5bfa79ab6f83b11b9a9fb\jetified-decoro-1.3.4\AndroidManifest.xml:2:1-14:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\c8a8e84eea709b7dc37efe678849ff60\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\9b1bee0dfb2c43705b34e50c81fa2e8a\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b658ea1826628845a11d21b00d6fc677\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\572b671e6c7b416edf7c1d3bfd527870\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e9efcaf9f1233cdff9422f64426f498b\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:2:1-59:12
+MERGED from [com.mikepenz.iconics:library:0.7.3] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\78747b329e2b01b875965ead2aeca3f5\library-0.7.3\AndroidManifest.xml:2:1-12:12
+MERGED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:9:1-81:12
+INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-67:12
 	package
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:3:5-39
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:4:5-39
 		INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
 		INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-62:12
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-67:12
 		INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-62:12
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:1-67:12
 		INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:2:11-69
-uses-sdk
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:5:5-7:41
-INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:5:5-7:41
-INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:5:5-7:41
-MERGED from [com.mikepenz.materialdrawer:library:0.9.5] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\library-0.9.5.aar\5c2ab45825252e73125436c223598e7a\AndroidManifest.xml:8:5-10:41
-MERGED from [com.mikepenz.materialdrawer:library:0.9.5] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\library-0.9.5.aar\5c2ab45825252e73125436c223598e7a\AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ea6a19d9d58a21175394f89289a6981c\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ea6a19d9d58a21175394f89289a6981c\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:recyclerview-v7:21.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-21.0.0.aar\6d4dcbc888b17ef2497b5c22dbbb0620\AndroidManifest.xml:15:5-42
-MERGED from [com.android.support:recyclerview-v7:21.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-21.0.0.aar\6d4dcbc888b17ef2497b5c22dbbb0620\AndroidManifest.xml:15:5-42
-MERGED from [com.google.android.gms:play-services-maps:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.2.aar\f7cdd6c908d3e87e7c2433b0613be951\AndroidManifest.xml:23:5-43
-MERGED from [com.google.android.gms:play-services-maps:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.2.aar\f7cdd6c908d3e87e7c2433b0613be951\AndroidManifest.xml:23:5-43
-MERGED from [com.google.android.gms:play-services-location:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.2.aar\3bdf303139c7000f0a0d2e38e49662ae\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-location:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.2.aar\3bdf303139c7000f0a0d2e38e49662ae\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-base:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.2.aar\b434557880db6a8d66bb3be219da3715\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-base:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.2.aar\b434557880db6a8d66bb3be219da3715\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tasks:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.2.aar\afadc8ebff68aabb574315289da25e5c\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-tasks:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.2.aar\afadc8ebff68aabb574315289da25e5c\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.2.aar\07af563ef9b3a6b6a183208ce88837d9\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-basement:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.2.aar\07af563ef9b3a6b6a183208ce88837d9\AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\a30c25496c78690f7dcd1cf00a82935f\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\a30c25496c78690f7dcd1cf00a82935f\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\6bbade244fb8d03e765a30b6cb1a324d\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\6bbade244fb8d03e765a30b6cb1a324d\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\6cd3b03205768565dbef6f89161a69fa\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\6cd3b03205768565dbef6f89161a69fa\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\ce3271390e2f1564c6aa77f037477da7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\ce3271390e2f1564c6aa77f037477da7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\b09b3339982988d1f2c304ad4e3e8da1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\b09b3339982988d1f2c304ad4e3e8da1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a2da270cbc7bf8434c0095029888454b\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a2da270cbc7bf8434c0095029888454b\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\c7c13b9fb9d1fb183448a8f75e725345\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\c7c13b9fb9d1fb183448a8f75e725345\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\91b39b33dd83bbebb037c3a81eb540ad\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\91b39b33dd83bbebb037c3a81eb540ad\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\c917f9eea906b6b42501fb1d954b3938\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\c917f9eea906b6b42501fb1d954b3938\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:cardview-v7:21.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\cardview-v7-21.0.0.aar\303988f3e3df9e16ee9dd6046411f6c1\AndroidManifest.xml:15:5-42
-MERGED from [com.android.support:cardview-v7:21.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\cardview-v7-21.0.0.aar\303988f3e3df9e16ee9dd6046411f6c1\AndroidManifest.xml:15:5-42
-MERGED from [com.mikepenz.iconics:library:0.7.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\library-0.7.3.aar\aa59a5e547fae471185069fcea9eb418\AndroidManifest.xml:8:5-10:41
-MERGED from [com.mikepenz.iconics:library:0.7.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\library-0.7.3.aar\aa59a5e547fae471185069fcea9eb418\AndroidManifest.xml:8:5-10:41
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1167431860df0ac1ae9801ecd5b9eb66\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1167431860df0ac1ae9801ecd5b9eb66\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-maps-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.4.2.aar\ffb2f1b0d8a6aea9afb7c4faf39f2ad4\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-maps-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.4.2.aar\ffb2f1b0d8a6aea9afb7c4faf39f2ad4\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-location-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.4.2.aar\b035e43b16f4b9983eb6c4d5b67e8a4f\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-location-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.4.2.aar\b035e43b16f4b9983eb6c4d5b67e8a4f\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-base-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.4.2.aar\022ee68959ab33ecd72fe3e6f6898075\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-base-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.4.2.aar\022ee68959ab33ecd72fe3e6f6898075\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.4.2.aar\879678aeafdcd3259c614364be651c75\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.4.2.aar\879678aeafdcd3259c614364be651c75\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.4.2.aar\c2c3ba206f02c7f28333d60c778dcb4c\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.4.2.aar\c2c3ba206f02c7f28333d60c778dcb4c\AndroidManifest.xml:4:5-43
-INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:5:5-7:41
-INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:5:5-7:41
-	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ea6a19d9d58a21175394f89289a6981c\AndroidManifest.xml:23:9-75
-	android:targetSdkVersion
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:7:9-38
-		INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
-		INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
-	android:minSdkVersion
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:6:9-35
-		INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
-		INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
 uses-feature#0x00020000
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:9:5-11:35
-MERGED from [com.google.android.gms:play-services-maps:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.2.aar\f7cdd6c908d3e87e7c2433b0613be951\AndroidManifest.xml:21:5-77
-MERGED from [com.google.android.gms:play-services-maps:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.2.aar\f7cdd6c908d3e87e7c2433b0613be951\AndroidManifest.xml:21:5-77
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:10:5-12:35
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5e11758bb745f8db2f1bdde7c44c6b3e\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5e11758bb745f8db2f1bdde7c44c6b3e\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:10:9-41
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:11:9-41
 	android:required
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:11:9-32
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:12:9-32
 uses-permission#android.permission.INTERNET
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:13:5-67
-MERGED from [com.google.android.gms:play-services-maps:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.2.aar\f7cdd6c908d3e87e7c2433b0613be951\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-maps:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.2.aar\f7cdd6c908d3e87e7c2433b0613be951\AndroidManifest.xml:20:5-66
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:14:5-67
+MERGED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:32:5-67
+MERGED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:32:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5e11758bb745f8db2f1bdde7c44c6b3e\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5e11758bb745f8db2f1bdde7c44c6b3e\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:20:5-67
+MERGED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:20:5-67
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:13:22-64
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:14:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:14:5-79
-MERGED from [com.google.android.gms:play-services-maps:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.2.aar\f7cdd6c908d3e87e7c2433b0613be951\AndroidManifest.xml:19:5-78
-MERGED from [com.google.android.gms:play-services-maps:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.2.aar\f7cdd6c908d3e87e7c2433b0613be951\AndroidManifest.xml:19:5-78
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:15:5-79
+MERGED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:31:5-79
+MERGED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:31:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5e11758bb745f8db2f1bdde7c44c6b3e\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5e11758bb745f8db2f1bdde7c44c6b3e\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:21:5-79
+MERGED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:21:5-79
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:14:22-76
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:15:22-76
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:15:5-98
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:16:5-98
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:15:22-95
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:16:22-95
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:16:5-81
-	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:16:22-78
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:17:5-81
 	android:name
 		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:17:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:18:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:18:5-79
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:19:5-79
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:18:22-76
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:19:22-76
 permission#com.examples.opencar.geo.permission.MAPS_RECEIVE
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:20:5-22:47
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:21:5-23:47
 	android:protectionLevel
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:22:9-44
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:23:9-44
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:21:9-72
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:22:9-72
 uses-permission#com.examples.opencar.geo.permission.MAPS_RECEIVE
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:24:5-26:36
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:25:5-27:36
 	android:required
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:26:9-33
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:27:9-33
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:25:9-72
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:26:9-72
 application
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:28:5-60:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ea6a19d9d58a21175394f89289a6981c\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ea6a19d9d58a21175394f89289a6981c\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:recyclerview-v7:21.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-21.0.0.aar\6d4dcbc888b17ef2497b5c22dbbb0620\AndroidManifest.xml:17:5-19:19
-MERGED from [com.android.support:recyclerview-v7:21.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-21.0.0.aar\6d4dcbc888b17ef2497b5c22dbbb0620\AndroidManifest.xml:17:5-19:19
-MERGED from [com.google.android.gms:play-services-maps:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.2.aar\f7cdd6c908d3e87e7c2433b0613be951\AndroidManifest.xml:24:5-19
-MERGED from [com.google.android.gms:play-services-maps:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.2.aar\f7cdd6c908d3e87e7c2433b0613be951\AndroidManifest.xml:24:5-19
-MERGED from [com.google.android.gms:play-services-location:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.2.aar\3bdf303139c7000f0a0d2e38e49662ae\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-location:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.2.aar\3bdf303139c7000f0a0d2e38e49662ae\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-base:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.2.aar\b434557880db6a8d66bb3be219da3715\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-base:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.2.aar\b434557880db6a8d66bb3be219da3715\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-tasks:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.2.aar\afadc8ebff68aabb574315289da25e5c\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-tasks:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.2.aar\afadc8ebff68aabb574315289da25e5c\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.2.aar\07af563ef9b3a6b6a183208ce88837d9\AndroidManifest.xml:19:5-21:19
-MERGED from [com.google.android.gms:play-services-basement:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.2.aar\07af563ef9b3a6b6a183208ce88837d9\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\a30c25496c78690f7dcd1cf00a82935f\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\a30c25496c78690f7dcd1cf00a82935f\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\6bbade244fb8d03e765a30b6cb1a324d\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\6bbade244fb8d03e765a30b6cb1a324d\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\6cd3b03205768565dbef6f89161a69fa\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\6cd3b03205768565dbef6f89161a69fa\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\ce3271390e2f1564c6aa77f037477da7\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\ce3271390e2f1564c6aa77f037477da7\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\b09b3339982988d1f2c304ad4e3e8da1\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\b09b3339982988d1f2c304ad4e3e8da1\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a2da270cbc7bf8434c0095029888454b\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a2da270cbc7bf8434c0095029888454b\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\c7c13b9fb9d1fb183448a8f75e725345\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\c7c13b9fb9d1fb183448a8f75e725345\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\91b39b33dd83bbebb037c3a81eb540ad\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\91b39b33dd83bbebb037c3a81eb540ad\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\c917f9eea906b6b42501fb1d954b3938\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\c917f9eea906b6b42501fb1d954b3938\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:cardview-v7:21.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\cardview-v7-21.0.0.aar\303988f3e3df9e16ee9dd6046411f6c1\AndroidManifest.xml:16:5-19
-MERGED from [com.android.support:cardview-v7:21.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\cardview-v7-21.0.0.aar\303988f3e3df9e16ee9dd6046411f6c1\AndroidManifest.xml:16:5-19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1167431860df0ac1ae9801ecd5b9eb66\AndroidManifest.xml:24:5-28:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1167431860df0ac1ae9801ecd5b9eb66\AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.android.gms:play-services-maps-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.4.2.aar\ffb2f1b0d8a6aea9afb7c4faf39f2ad4\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-maps-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.4.2.aar\ffb2f1b0d8a6aea9afb7c4faf39f2ad4\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-location-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.4.2.aar\b035e43b16f4b9983eb6c4d5b67e8a4f\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-location-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.4.2.aar\b035e43b16f4b9983eb6c4d5b67e8a4f\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-base-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.4.2.aar\022ee68959ab33ecd72fe3e6f6898075\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-base-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.4.2.aar\022ee68959ab33ecd72fe3e6f6898075\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.4.2.aar\879678aeafdcd3259c614364be651c75\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.4.2.aar\879678aeafdcd3259c614364be651c75\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.4.2.aar\c2c3ba206f02c7f28333d60c778dcb4c\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.4.2.aar\c2c3ba206f02c7f28333d60c778dcb4c\AndroidManifest.xml:5:5-20
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:29:5-65:19
+MERGED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:34:5-51:19
+MERGED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:34:5-51:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\d077bb499755e6a460c5e57ac47045eb\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\d077bb499755e6a460c5e57ac47045eb\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5e11758bb745f8db2f1bdde7c44c6b3e\play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5e11758bb745f8db2f1bdde7c44c6b3e\play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\4bae84e0d760a7548f24e27c0532a606\play-services-location-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\4bae84e0d760a7548f24e27c0532a606\play-services-location-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-identity:16.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\bb00e1a7536ebe7133b7da0cd677c97f\play-services-identity-16.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:16.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\bb00e1a7536ebe7133b7da0cd677c97f\play-services-identity-16.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\767017b07256b24a64ded9cb713958df\play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\767017b07256b24a64ded9cb713958df\play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\2a23028d3edec080cc0af8b4c91f4664\play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\2a23028d3edec080cc0af8b4c91f4664\play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\1194c416cb0c95b62b8133be40f19a17\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\1194c416cb0c95b62b8133be40f19a17\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\999864b2b84fb144877f6fcea5aee8d7\play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\999864b2b84fb144877f6fcea5aee8d7\play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\70d91b4820d2cd77ec489350183e960e\core-1.0.0\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\70d91b4820d2cd77ec489350183e960e\core-1.0.0\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\20df42356517dc7d27eb4e095f2f580b\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\20df42356517dc7d27eb4e095f2f580b\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [ru.tinkoff.decoro:decoro:1.3.4] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\65339d5b1bb5bfa79ab6f83b11b9a9fb\jetified-decoro-1.3.4\AndroidManifest.xml:12:5-20
+MERGED from [ru.tinkoff.decoro:decoro:1.3.4] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\65339d5b1bb5bfa79ab6f83b11b9a9fb\jetified-decoro-1.3.4\AndroidManifest.xml:12:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e9efcaf9f1233cdff9422f64426f498b\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e9efcaf9f1233cdff9422f64426f498b\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:12:5-57:19
+MERGED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:12:5-57:19
+MERGED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:23:5-79:19
+MERGED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:23:5-79:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\70d91b4820d2cd77ec489350183e960e\core-1.0.0\AndroidManifest.xml:22:18-86
 	android:label
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:29:9-41
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:30:9-41
+	tools:ignore
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:23:18-57
 	android:theme
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:30:9-59
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:31:9-59
 activity#com.examples.opencar.geo.ValletActivity
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:31:9-61
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:32:9-61
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:31:19-49
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:32:19-49
 activity#com.examples.opencar.geo.userDataActivity
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:32:9-54
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:33:9-54
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:32:19-51
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:33:19-51
 activity#com.examples.opencar.geo.ReserveActivity
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:33:9-53
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:34:9-53
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:33:19-50
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:34:19-50
 meta-data#com.google.android.gms.version
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:35:9-37:69
-MERGED from [com.google.android.gms:play-services-basement:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.2.aar\07af563ef9b3a6b6a183208ce88837d9\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.2.aar\07af563ef9b3a6b6a183208ce88837d9\AndroidManifest.xml:20:9-121
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:36:9-38:69
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\999864b2b84fb144877f6fcea5aee8d7\play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\999864b2b84fb144877f6fcea5aee8d7\play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:37:13-66
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:38:13-66
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:36:13-58
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:37:13-58
 activity#com.examples.opencar.geo.MainLogin
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:39:9-45:20
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:40:9-46:20
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:39:19-44
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:40:13-44:29
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:40:19-44
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:41:13-45:29
 action#android.intent.action.MAIN
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:41:17-69
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:42:17-69
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:41:25-66
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:42:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:43:17-77
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:44:17-77
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:43:27-74
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:44:27-74
 activity#com.examples.opencar.geo.MapShowActivity
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:46:9-53
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:47:9-53
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:46:19-50
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:47:19-50
 activity#com.examples.opencar.geo.QueryEditActivity
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:47:9-55
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:48:9-55
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:47:19-52
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:48:19-52
 activity#com.examples.opencar.geo.ShowGeoPointsTextActivity
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:48:9-63
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:49:9-63
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:48:19-60
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:49:19-60
 activity#com.examples.opencar.geo.FilterActivity
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:49:9-52
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:50:9-52
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:49:19-49
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:50:19-49
 activity#com.examples.opencar.geo.GeoCategoriesListActivity
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:50:9-63
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:51:9-63
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:50:19-60
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:51:19-60
 activity#com.examples.opencar.geo.RestorePasswordActivity
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:51:9-61
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:52:9-61
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:51:19-58
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:52:19-58
 activity#com.examples.opencar.geo.RegisterActivity
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:52:9-54
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:53:9-54
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:52:19-51
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:53:19-51
 activity#com.examples.opencar.geo.LoginResult
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:53:9-49
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:54:9-49
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:53:19-46
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:54:19-46
 service#com.backendless.AndroidService
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:55:9-66
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:56:9-66
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:55:18-63
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:56:18-63
 meta-data#com.google.android.geo.API_KEY
-ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:57:9-59:71
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:58:9-60:71
 	android:value
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:59:13-68
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:60:13-68
 	android:name
-		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:58:13-58
-meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ea6a19d9d58a21175394f89289a6981c\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\a30c25496c78690f7dcd1cf00a82935f\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\a30c25496c78690f7dcd1cf00a82935f\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\6bbade244fb8d03e765a30b6cb1a324d\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\6bbade244fb8d03e765a30b6cb1a324d\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\6cd3b03205768565dbef6f89161a69fa\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\6cd3b03205768565dbef6f89161a69fa\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\ce3271390e2f1564c6aa77f037477da7\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\ce3271390e2f1564c6aa77f037477da7\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\b09b3339982988d1f2c304ad4e3e8da1\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\b09b3339982988d1f2c304ad4e3e8da1\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a2da270cbc7bf8434c0095029888454b\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\a2da270cbc7bf8434c0095029888454b\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\c7c13b9fb9d1fb183448a8f75e725345\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\c7c13b9fb9d1fb183448a8f75e725345\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\91b39b33dd83bbebb037c3a81eb540ad\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\91b39b33dd83bbebb037c3a81eb540ad\AndroidManifest.xml:26:9-28:38
-	android:value
-		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ea6a19d9d58a21175394f89289a6981c\AndroidManifest.xml:28:13-35
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:59:13-58
+meta-data#com.google.android.gms.wallet.api.enabled
+ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:61:9-63:35
+REJECTED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:48:9-50:36
+	tools:node
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:63:13-32
 	android:name
-		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ea6a19d9d58a21175394f89289a6981c\AndroidManifest.xml:27:13-51
-activity#android.support.v7.widget.TestActivity
-ADDED from [com.android.support:recyclerview-v7:21.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-21.0.0.aar\6d4dcbc888b17ef2497b5c22dbbb0620\AndroidManifest.xml:18:9-115
-	android:label
-		ADDED from [com.android.support:recyclerview-v7:21.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-21.0.0.aar\6d4dcbc888b17ef2497b5c22dbbb0620\AndroidManifest.xml:18:19-59
-	android:name
-		ADDED from [com.android.support:recyclerview-v7:21.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-21.0.0.aar\6d4dcbc888b17ef2497b5c22dbbb0620\AndroidManifest.xml:18:60-113
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.2.aar\b434557880db6a8d66bb3be219da3715\AndroidManifest.xml:19:9-172
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.2.aar\b434557880db6a8d66bb3be219da3715\AndroidManifest.xml:19:146-170
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:62:13-69
+uses-sdk
+INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
+INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
+MERGED from [com.mikepenz.materialdrawer:library:0.9.5] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\798762e84521654f8a591c18089e23d5\jetified-library-0.9.5\AndroidManifest.xml:8:5-10:41
+MERGED from [com.mikepenz.materialdrawer:library:0.9.5] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\798762e84521654f8a591c18089e23d5\jetified-library-0.9.5\AndroidManifest.xml:8:5-10:41
+MERGED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:27:5-29:41
+MERGED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:27:5-29:41
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\d077bb499755e6a460c5e57ac47045eb\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\d077bb499755e6a460c5e57ac47045eb\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\6784e272fe4a57e2290520e7524c283e\appcompat-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\6784e272fe4a57e2290520e7524c283e\appcompat-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-wallet:16.0.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\aa9bf64ea90364ee4454f2b23260e00d\jetified-play-services-wallet-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-wallet:16.0.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\aa9bf64ea90364ee4454f2b23260e00d\jetified-play-services-wallet-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5e11758bb745f8db2f1bdde7c44c6b3e\play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5e11758bb745f8db2f1bdde7c44c6b3e\play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\589c59f6bef0d3a413eb907c291a73f2\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\589c59f6bef0d3a413eb907c291a73f2\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\4bae84e0d760a7548f24e27c0532a606\play-services-location-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\4bae84e0d760a7548f24e27c0532a606\play-services-location-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-identity:16.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\bb00e1a7536ebe7133b7da0cd677c97f\play-services-identity-16.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-identity:16.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\bb00e1a7536ebe7133b7da0cd677c97f\play-services-identity-16.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\767017b07256b24a64ded9cb713958df\play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\767017b07256b24a64ded9cb713958df\play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\2a23028d3edec080cc0af8b4c91f4664\play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\2a23028d3edec080cc0af8b4c91f4664\play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\1194c416cb0c95b62b8133be40f19a17\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\1194c416cb0c95b62b8133be40f19a17\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\999864b2b84fb144877f6fcea5aee8d7\play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\999864b2b84fb144877f6fcea5aee8d7\play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\9fb0da690426deec2ab294599390c00b\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\9fb0da690426deec2ab294599390c00b\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\feef0ca63f63f95851168dfbb59ef5f6\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\feef0ca63f63f95851168dfbb59ef5f6\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\24650f69bda29e0b8fd570ccfea4ddfc\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\24650f69bda29e0b8fd570ccfea4ddfc\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\6fca992d19c985883b1ae18f64e64e55\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\6fca992d19c985883b1ae18f64e64e55\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\962df82125c170c0437a18027c2fc0de\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\962df82125c170c0437a18027c2fc0de\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5f2455edbbbcdfc2a8db9401b343ff39\vectordrawable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5f2455edbbbcdfc2a8db9401b343ff39\vectordrawable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\55058873ad00df8356bbc77ccdea8036\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\55058873ad00df8356bbc77ccdea8036\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\16f0e3037e29fb2d0d4fde243dbf3452\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\16f0e3037e29fb2d0d4fde243dbf3452\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\082b00f6bd0084ce4331b650b8c0725b\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\082b00f6bd0084ce4331b650b8c0725b\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\4a8104154c8ff137b98b79d23e4653e6\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\4a8104154c8ff137b98b79d23e4653e6\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\41b30a14b15a1204a0642ae172af7907\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\41b30a14b15a1204a0642ae172af7907\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\74f60d8f9f7ba687bbb33384f92f8576\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\74f60d8f9f7ba687bbb33384f92f8576\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\18f0782935f15d242c11e154fbfd184e\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\18f0782935f15d242c11e154fbfd184e\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\9a31e49220a438033b1c5ebad9f95e49\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\9a31e49220a438033b1c5ebad9f95e49\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\1d84600bd92b4375c48aaa1c24f68a59\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\1d84600bd92b4375c48aaa1c24f68a59\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\03f9b4d1362c3def7584a7ce27638614\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\03f9b4d1362c3def7584a7ce27638614\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\70d91b4820d2cd77ec489350183e960e\core-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\70d91b4820d2cd77ec489350183e960e\core-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\233321799ec28c5e2d121181d2b5fb49\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\233321799ec28c5e2d121181d2b5fb49\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\20df42356517dc7d27eb4e095f2f580b\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\20df42356517dc7d27eb4e095f2f580b\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\2f0f45e9ba4c8d2904f8f5ea6bd007b9\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\2f0f45e9ba4c8d2904f8f5ea6bd007b9\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\ab27234a9acfc2c5a4a2cd88c81641df\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\ab27234a9acfc2c5a4a2cd88c81641df\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\4a3cf6c9912995f98534396feea1dd93\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\4a3cf6c9912995f98534396feea1dd93\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\366d3c048137d2f60e555627070a2388\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\366d3c048137d2f60e555627070a2388\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\24c4bb63d5fdd88e3e5e1fc21354bf43\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\24c4bb63d5fdd88e3e5e1fc21354bf43\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\fbbc1db1baccc1378bd2c4bc1008963b\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\fbbc1db1baccc1378bd2c4bc1008963b\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [ru.tinkoff.decoro:decoro:1.3.4] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\65339d5b1bb5bfa79ab6f83b11b9a9fb\jetified-decoro-1.3.4\AndroidManifest.xml:8:5-10:41
+MERGED from [ru.tinkoff.decoro:decoro:1.3.4] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\65339d5b1bb5bfa79ab6f83b11b9a9fb\jetified-decoro-1.3.4\AndroidManifest.xml:8:5-10:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\c8a8e84eea709b7dc37efe678849ff60\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\c8a8e84eea709b7dc37efe678849ff60\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\9b1bee0dfb2c43705b34e50c81fa2e8a\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\9b1bee0dfb2c43705b34e50c81fa2e8a\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b658ea1826628845a11d21b00d6fc677\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b658ea1826628845a11d21b00d6fc677\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\572b671e6c7b416edf7c1d3bfd527870\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\572b671e6c7b416edf7c1d3bfd527870\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e9efcaf9f1233cdff9422f64426f498b\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e9efcaf9f1233cdff9422f64426f498b\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.mikepenz.iconics:library:0.7.3] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\78747b329e2b01b875965ead2aeca3f5\library-0.7.3\AndroidManifest.xml:8:5-10:41
+MERGED from [com.mikepenz.iconics:library:0.7.3] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\78747b329e2b01b875965ead2aeca3f5\library-0.7.3\AndroidManifest.xml:8:5-10:41
+MERGED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:15:5-17:41
+MERGED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:15:5-17:41
+INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
+INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
+		INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
+		ADDED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
+		INJECTED from D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
+activity#ru.yandex.money.android.sdk.utils.WebViewActivity
+ADDED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:35:9-37:47
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.2.aar\b434557880db6a8d66bb3be219da3715\AndroidManifest.xml:19:86-145
+		ADDED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:37:13-44
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.4.2] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.2.aar\b434557880db6a8d66bb3be219da3715\AndroidManifest.xml:19:19-85
-meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1167431860df0ac1ae9801ecd5b9eb66\AndroidManifest.xml:25:9-27:47
+		ADDED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:36:13-77
+activity#ru.yandex.money.android.sdk.impl.PendingIntentActivity
+ADDED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:38:9-40:59
+	android:theme
+		ADDED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:40:13-56
+	android:name
+		ADDED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:39:13-82
+activity#ru.yandex.money.android.sdk.impl.CheckoutActivity
+ADDED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:41:9-43:59
+	android:theme
+		ADDED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:43:13-56
+	android:name
+		ADDED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:42:13-77
+activity#ru.yandex.money.android.sdk.impl.contract.SavePaymentMethodInfoActivity
+ADDED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:44:9-46:47
+	android:theme
+		ADDED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:46:13-44
+	android:name
+		ADDED from [com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e1818e09ed24d10a5ccac92ba6c0670d\jetified-checkout-3.0.2\AndroidManifest.xml:45:13-99
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5e11758bb745f8db2f1bdde7c44c6b3e\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5e11758bb745f8db2f1bdde7c44c6b3e\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\5e11758bb745f8db2f1bdde7c44c6b3e\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\767017b07256b24a64ded9cb713958df\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\767017b07256b24a64ded9cb713958df\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\767017b07256b24a64ded9cb713958df\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\767017b07256b24a64ded9cb713958df\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+activity#com.yandex.authsdk.internal.AuthSdkActivity
+ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:13:9-16:64
+	android:label
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:15:13-29
+	android:theme
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:16:13-61
+	android:name
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:14:13-71
+activity#com.yandex.authsdk.internal.BrowserLoginActivity
+ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:17:9-19:46
+	android:launchMode
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:19:13-43
+	android:name
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:18:13-76
+activity#com.yandex.authsdk.internal.WebViewLoginActivity
+ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:20:9-23:52
+	android:configChanges
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:22:13-83
+	android:theme
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:23:13-49
+	android:name
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:21:13-76
+activity#com.yandex.authsdk.internal.BrowserDataActivity
+ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:24:9-49:20
+	android:theme
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:26:13-61
+	android:name
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:25:13-75
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:yx${YANDEX_CLIENT_ID}.oauth.yandex.ru+data:path:/auth/finish+data:scheme:https
+ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:27:13-37:29
+	android:autoVerify
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:27:28-53
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:yxваш id приложения в Яндекс.Паспорте.oauth.yandex.ru+data:path:/auth/finish+data:scheme:https
+ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:27:13-37:29
+	android:autoVerify
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:27:28-53
+action#android.intent.action.VIEW
+ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:28:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:30:17-76
+	android:name
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:30:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:31:17-78
+	android:name
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:31:27-75
+data
+ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:33:17-36:46
+	android:path
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:35:21-48
+	android:host
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:34:21-73
+	android:scheme
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:36:21-43
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:path:/auth/finish+data:scheme:yx${YANDEX_CLIENT_ID}
+ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:38:13-48:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:path:/auth/finish+data:scheme:yxваш id приложения в Яндекс.Паспорте
+ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:38:13-48:29
+meta-data#com.yandex.auth.CLIENT_ID
+ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:51:9-53:51
 	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1167431860df0ac1ae9801ecd5b9eb66\AndroidManifest.xml:27:13-44
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:53:13-48
 	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1167431860df0ac1ae9801ecd5b9eb66\AndroidManifest.xml:26:13-58
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:52:13-53
+meta-data#com.yandex.auth.OAUTH_HOST
+ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:54:9-56:47
+	android:value
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:56:13-44
+	android:name
+		ADDED from [com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b41c33281cd5d8a32dc98fa46bf0bf12\jetified-authsdk-2.1.1\AndroidManifest.xml:55:13-54
+service#com.yandex.metrica.MetricaService
+ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:26:9-43:19
+	android:process
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:30:13-39
+	android:enabled
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:28:13-35
+	android:exported
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:29:13-36
+	tools:ignore
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:31:13-43
+	android:name
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:27:13-61
+intent-filter#action:name:com.yandex.metrica.IMetricaService+category:name:android.intent.category.DEFAULT+data:scheme:metrica
+ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:32:13-38:29
+action#com.yandex.metrica.IMetricaService
+ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:35:25-74
+meta-data#metrica:api:level
+ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:40:13-42:38
+	android:value
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:42:17-35
+	android:name
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:41:17-49
+service#com.yandex.metrica.ConfigurationService
+ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:44:9-60:19
+	android:process
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:48:13-39
+	android:enabled
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:47:13-37
+	tools:ignore
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:49:13-43
+	android:name
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:45:13-67
+meta-data#metrica:configuration:api:level
+ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:50:13-52:37
+	android:value
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:52:17-34
+	android:name
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:51:17-63
+intent-filter#action:name:com.yandex.metrica.configuration.ACTION_INIT
+ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:54:13-59:29
+action#com.yandex.metrica.configuration.ACTION_INIT
+ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:58:17-87
+	android:name
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:58:25-84
+service#com.yandex.metrica.ConfigurationJobService
+ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:61:9-67:19
+	android:process
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:66:13-39
+	android:enabled
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:63:13-35
+	android:exported
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:64:13-37
+	android:permission
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:65:13-69
+	android:name
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:62:13-70
+receiver#com.yandex.metrica.MetricaEventHandler
+ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:70:9-78:20
+	android:enabled
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:72:13-35
+	android:exported
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:73:13-36
+	tools:ignore
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:74:13-44
+	android:name
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:71:13-66
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:75:13-77:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:76:17-79
+	android:name
+		ADDED from [com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\706930fd0ec0a430a1e6eda95f0c557f\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:76:25-76

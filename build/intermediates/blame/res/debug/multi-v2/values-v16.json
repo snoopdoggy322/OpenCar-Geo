@@ -4,7 +4,7 @@
             "outputFile": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\91b39b33dd83bbebb037c3a81eb540ad\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\70d91b4820d2cd77ec489350183e960e\\core-1.0.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\ea6a19d9d58a21175394f89289a6981c\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\6784e272fe4a57e2290520e7524c283e\\appcompat-1.0.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

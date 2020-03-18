@@ -2,13 +2,13 @@ package com.examples.opencar.geo;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 
 import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
