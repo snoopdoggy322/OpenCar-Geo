@@ -95,6 +95,7 @@
     <string name="drawer_item_open_source">Open Source</string>
     <string name="drawer_item_contact">Contact</string>
     <string name="buttonApply">Забронировать</string>
+    <string name="Пополнить_счет">Пополнить счет</string>
 
 
 </resources>

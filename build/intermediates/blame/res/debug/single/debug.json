@@ -76,6 +76,10 @@
         "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_success_tokenize.xml.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_success_tokenize.xml"
+    },
+    {
         "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\drawable_icon.png.flat",
         "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\drawable\\icon.png"
     },

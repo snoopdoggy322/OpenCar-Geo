@@ -1354,6 +1354,7 @@ id book_now
 id bottom
 id button
 id button2
+id button3
 id buttonPanel
 id button_bkndlsBackendlessLogout
 id buyButton
@@ -1378,8 +1379,11 @@ id classic
 id clearButton
 id clip_horizontal
 id clip_vertical
+id close
 id collapseActionView
+id confirm
 id container
+id container3ds
 id containerBottomSheet
 id content
 id contentContainer
@@ -1407,6 +1411,7 @@ id divider
 id donate_with
 id donate_with_google
 id drawer_layout
+id editText
 id editText_bkndlsBackendlessUserInfo
 id edit_query
 id emailField
@@ -1581,8 +1586,11 @@ id shortcut
 id showAsMapButton
 id showAsTextButton
 id showCustom
+id showDocumentation
+id showGithub
 id showHome
 id showTitle
+id showToken
 id slide
 id slider_layout
 id smallLabel
@@ -1627,6 +1635,7 @@ id textView3
 id textView4
 id textView5
 id textView6
+id textView7
 id textView8
 id textView9
 id textView_bkndlsBackendlessUserInfo
@@ -1652,6 +1661,7 @@ id transition_transform
 id uniform
 id unlabeled
 id up
+id url3ds
 id useLogo
 id valletText
 id view_offset_helper
@@ -1717,6 +1727,7 @@ layout activity_main_login
 layout activity_register
 layout activity_reserve
 layout activity_restore_password
+layout activity_success_tokenize
 layout activity_user_data
 layout activity_vallet
 layout design_bottom_navigation_item
@@ -2021,6 +2032,7 @@ string ym_unhandled_error
 string ym_unknown_error
 string ym_verify_attempts_exceeded
 string ym_wrong_passcode_error
+string Пополнить_счет
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

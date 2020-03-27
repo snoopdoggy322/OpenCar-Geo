@@ -69,13 +69,14 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
   public static Units units= Units.KILOMETERS;
   public FusedLocationProviderClient mFusedLocationProviderClient;
   public Object currentMarker=null;
+  String userData=null;
   @Override
   public void onCreate( Bundle savedInstanceState )
   {
+    userData =Backendless.UserService.CurrentUser().toString();
     super.onCreate( savedInstanceState );
     setContentView( R.layout.map_show );
 
-    final String userData =Backendless.UserService.CurrentUser().toString();
 
 
     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

@@ -20,7 +20,7 @@ repositories {
     mavenLocal()
     mavenCentral()
     jcenter()
-  }
+}
 
 
 allprojects {
@@ -47,7 +47,7 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-        manifestPlaceholders = [YANDEX_CLIENT_ID:"ваш id приложения в Яндекс.Паспорте"]
+        manifestPlaceholders = [YANDEX_CLIENT_ID: "ваш id приложения в Яндекс.Паспорте"]
     }
 
     buildTypes {
@@ -99,6 +99,6 @@ dependencies {
     implementation 'com.yandex.money:checkout:3.0.2'
     implementation "com.yandex.android:authsdk:2.1.1"
 
+    implementation 'com.google.code.gson:gson:2.8.6'
+
 }
-
-

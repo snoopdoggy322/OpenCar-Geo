@@ -104,6 +104,7 @@
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.51@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.2.51@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.6@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.mikepenz.materialdrawer:library:0.9.5@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.mikepenz.iconics:library:0.7.3@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.yandex.money:checkout:3.0.2@aar" level="project" />
