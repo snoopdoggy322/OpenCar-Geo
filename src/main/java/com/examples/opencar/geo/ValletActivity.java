@@ -100,8 +100,8 @@ Button btn;
 
     void timeToStartCheckout() {
         PaymentParameters paymentParameters = new PaymentParameters( new Amount(Value, Currency.getInstance("RUB")),
-                "Название товара",
-                "Описание товара",
+                "Пополнение счета OpenCar",
+                "Пополнение",
                 "test_NjgxNzY0hC97jKlgGsQ9YjZS7odXlvoRW0LUlPusFNo",
                 "680005",
                 SavePaymentMethod.USER_SELECTS

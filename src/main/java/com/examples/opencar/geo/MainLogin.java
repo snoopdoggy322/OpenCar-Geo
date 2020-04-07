@@ -129,6 +129,7 @@ public class MainLogin extends AppCompatActivity {
 		intent.putExtra(LoginResult.logoutButtonState_key, true);
 		//startActivity(intent);
 		startActivity( new Intent( this, GeoCategoriesListActivity.class ) );
+		finish();
 	}
 
 	private void startLoginResult(String msg, boolean logoutButtonState)

@@ -1461,9 +1461,9 @@ id icon_only
 id identityField
 id ifRoom
 id image
-id imageView
 id imageView2
 id imageView3
+id imageView4
 id info
 id invisible
 id italic
@@ -1630,6 +1630,9 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView10
+id textView11
+id textView12
+id textView13
 id textView2
 id textView3
 id textView4
@@ -1666,6 +1669,7 @@ id useLogo
 id valletText
 id view_offset_helper
 id visible
+id webView
 id web_view
 id wide
 id withText

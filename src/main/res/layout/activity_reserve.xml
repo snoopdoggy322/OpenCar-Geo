@@ -12,11 +12,10 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView"
+        <WebView
+            android:id="@+id/webView"
             android:layout_width="match_parent"
-            android:layout_height="364dp"
-            app:srcCompat="@drawable/ic_launcher" />
+            android:layout_height="468dp" />
 
         <TextView
             android:id="@+id/textView3"
