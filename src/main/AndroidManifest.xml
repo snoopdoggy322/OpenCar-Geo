@@ -29,7 +29,8 @@
     <application
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".SuccessTokenizeActivity"></activity>
+        <activity android:name=".RentActivity"></activity>
+        <activity android:name=".SuccessTokenizeActivity" />
         <activity android:name=".ValletActivity" />
         <activity android:name=".userDataActivity" />
         <activity android:name=".ReserveActivity" />

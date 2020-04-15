@@ -21,6 +21,8 @@ import android.widget.Toast;
 import androidx.appcompat.widget.Toolbar;
 
 import com.backendless.Backendless;
+import com.backendless.async.callback.AsyncCallback;
+import com.backendless.exceptions.BackendlessFault;
 import com.backendless.geo.BackendlessGeoQuery;
 import com.backendless.geo.GeoPoint;
 import com.backendless.geo.Units;
@@ -76,7 +78,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
   public FusedLocationProviderClient mFusedLocationProviderClient;
   public HashMap currentMarker = null;
   String userData = null;
-
+  private final BackendlessGeoQuery backendlessGeoQuery = new BackendlessGeoQuery();
   @Override
   public void onCreate(Bundle savedInstanceState) {
     userData = Backendless.UserService.CurrentUser().toString();
@@ -96,7 +98,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
 
                     new PrimaryDrawerItem().withName("Профиль").withIcon(FontAwesome.Icon.faw_edit).withBadge("1").withIdentifier(1),
                     new PrimaryDrawerItem().withName("Кошелёк").withIcon(FontAwesome.Icon.faw_money).withIdentifier(2),
-                    new PrimaryDrawerItem().withName(R.string.drawer_item_custom).withIcon(FontAwesome.Icon.faw_eye).withBadge("6").withIdentifier(3),
+                    new PrimaryDrawerItem().withName("Мои поездки").withIcon(FontAwesome.Icon.faw_eye).withBadge("6").withIdentifier(3),
                     new SectionDrawerItem().withName(R.string.drawer_item_settings),
                     new SecondaryDrawerItem().withName(R.string.drawer_item_help).withIcon(FontAwesome.Icon.faw_cog),
                     new SecondaryDrawerItem().withName(R.string.drawer_item_open_source).withIcon(FontAwesome.Icon.faw_question).setEnabled(false),
@@ -138,7 +140,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
 
     List<String> chosenCategories = new ArrayList<String>();
     chosenCategories.add(category);
-    final BackendlessGeoQuery backendlessGeoQuery = new BackendlessGeoQuery();
+  // backendlessGeoQuery = new BackendlessGeoQuery();
     backendlessGeoQuery.setCategories(chosenCategories);
     backendlessGeoQuery.setIncludeMeta(true);
     if (!whereClause.isEmpty()) {
@@ -160,6 +162,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
     }
 
     initUI();
+
     Backendless.Geo.getPoints(backendlessGeoQuery, new DefaultCallback<List<GeoPoint>>(this) {
       @Override
       public void handleResponse(final List<GeoPoint> response) {
@@ -218,6 +221,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
             googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
               @Override
               public boolean onMarkerClick(Marker marker) {
+                setMapHeight(-1);
                 Toast.makeText(MapShowActivity.this, marker.getTitle(), Toast.LENGTH_SHORT).show();
                 HashMap[] map = (HashMap[]) marker.getTag();
                 ModelText.setText((String) map[0].get("model"));
@@ -225,7 +229,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
 
                 LocationText.setText(getAddressFromLocation(marker.getPosition().latitude,marker.getPosition().longitude));
                 NumberText.setText((String) map[0].get("number"));
-                setMapHeight(-1);
+
                 currentMarker=map[0];
                 return false;
               }
@@ -239,6 +243,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
         super.handleResponse(response);
       }
     });
+
   }
 
   public static Location getLastLocation(Context ctx) {
@@ -274,7 +279,8 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
     showAsTextButton.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        startActivity(new Intent(MapShowActivity.this, ShowGeoPointsTextActivity.class));
+        //startActivity(new Intent(MapShowActivity.this, ShowGeoPointsTextActivity.class));
+        updatePoints(backendlessGeoQuery);
       }
     });
 
@@ -378,5 +384,72 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
       return "Could not get address..!"+e.getMessage();
     }
   }
+public void updatePoints(BackendlessGeoQuery backendlessGeoQuery){
+  Backendless.Geo.getPoints(backendlessGeoQuery, new AsyncCallback<List<GeoPoint>>() {
+    @Override
+    public void handleResponse(final List<GeoPoint> response) {
 
+      final List<GeoPoint> geoPoints = response;
+      ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMapAsync(new OnMapReadyCallback() {
+        @Override
+        public void onMapReady(final GoogleMap googleMap) {
+
+          for (GeoPoint geoPoint : geoPoints) {
+            String snip = "NO DATA";
+            for (Map.Entry entry : geoPoint.getMetadata().entrySet()) {
+              snip += entry.getKey() + " - " + entry.getValue();
+
+            }
+            HashMap carMap = (HashMap) geoPoint.getMetadata();
+            HashMap[] carDataMap = null;
+            if (carMap.get("CarData") != null) {
+              carDataMap = (HashMap[]) carMap.get("CarData");
+              carDataMap[0].put("lat",geoPoint.getLatitude());
+              carDataMap[0].put("lon",geoPoint.getLongitude());
+              carDataMap[0].put("markerId",geoPoint.getObjectId());
+              snip = (String) carDataMap[0].toString();
+            }
+
+            googleMap.addMarker(new MarkerOptions().position(new LatLng(geoPoint.getLatitude(), geoPoint.getLongitude()))
+                    .snippet(snip)
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon))
+                    .title("ObjectId: " + geoPoint.getObjectId())
+            ).setTag(carDataMap);
+            ;
+            googleMap.setTrafficEnabled(false);
+
+
+          }
+          //if (geoPoints.size() == backendlessGeoQuery.getPageSize()) {
+          //  backendlessGeoQuery.prepareForNextPage();
+          //  Backendless.Geo.getPoints( backendlessGeoQuery,this);
+          // }
+          googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+              Toast.makeText(MapShowActivity.this, marker.getTitle(), Toast.LENGTH_SHORT).show();
+              HashMap[] map = (HashMap[]) marker.getTag();
+              ModelText.setText((String) map[0].get("model"));
+              CostText.setText(map[0].get("cost").toString() + " ₽/Мин");
+
+              LocationText.setText(getAddressFromLocation(marker.getPosition().latitude,marker.getPosition().longitude));
+              NumberText.setText((String) map[0].get("number"));
+              setMapHeight(-1);
+              currentMarker=map[0];
+              return false;
+            }
+          });
+
+
+        }
+
+      });
+    }
+
+    @Override
+    public void handleFault(BackendlessFault fault) {
+
+    }
+  });
+}
 }

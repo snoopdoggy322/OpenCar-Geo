@@ -86,5 +86,9 @@
     {
         "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_user_data.xml.flat",
         "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_user_data.xml"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_rent.xml.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_rent.xml"
     }
 ]

@@ -1353,9 +1353,11 @@ id blocking
 id book_now
 id bottom
 id button
-id button2
 id button3
+id buttonCancell
+id buttonEnd
 id buttonPanel
+id buttonStart
 id button_bkndlsBackendlessLogout
 id buyButton
 id buy_now
@@ -1633,6 +1635,8 @@ id textView10
 id textView11
 id textView12
 id textView13
+id textView14
+id textView15
 id textView2
 id textView3
 id textView4
@@ -1642,6 +1646,7 @@ id textView7
 id textView8
 id textView9
 id textView_bkndlsBackendlessUserInfo
+id textView_timer
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1729,6 +1734,7 @@ layout abc_tooltip
 layout activity_login_result
 layout activity_main_login
 layout activity_register
+layout activity_rent
 layout activity_reserve
 layout activity_restore_password
 layout activity_success_tokenize
