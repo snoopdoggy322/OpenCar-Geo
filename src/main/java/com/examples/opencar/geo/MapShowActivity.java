@@ -7,11 +7,16 @@ import android.content.Intent;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
+import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.ActivityCompat;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -21,6 +26,7 @@ import android.widget.Toast;
 import androidx.appcompat.widget.Toolbar;
 
 import com.backendless.Backendless;
+import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
 import com.backendless.geo.BackendlessGeoQuery;
@@ -49,12 +55,22 @@ import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SectionDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 public class MapShowActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener,
         LocationListener, ActivityCompat.OnRequestPermissionsResultCallback {
@@ -78,9 +94,11 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
   public FusedLocationProviderClient mFusedLocationProviderClient;
   public HashMap currentMarker = null;
   String userData = null;
+  private BackendlessUser user;
   private final BackendlessGeoQuery backendlessGeoQuery = new BackendlessGeoQuery();
   @Override
   public void onCreate(Bundle savedInstanceState) {
+    user=Backendless.UserService.CurrentUser();
     userData = Backendless.UserService.CurrentUser().toString();
     super.onCreate(savedInstanceState);
     setContentView(R.layout.map_show);
@@ -263,7 +281,6 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
   }
 
   private void initUI() {
-
     categoryTitle = (TextView) findViewById(R.id.categoryTitle);
     ModelText = findViewById(R.id.textView4);
     NumberText = findViewById(R.id.textView11);
@@ -297,7 +314,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
         AlertDialog.Builder builder = new AlertDialog.Builder(
                 MapShowActivity.this);
         builder.setTitle("Вы действительно желаете забронировать автомобиль - "+currentMarker.get("model")+"?" );
-        builder.setMessage("Вам будет предоставлено 15 минут для того, что бы добратся до автомобиля и продолжить.");
+        builder.setMessage("Вам будет предоставлено 15 минут для того, что бы добратся до автомобиля и продолжить."+currentMarker.toString());
         builder.setNeutralButton("Отмена",
                 new DialogInterface.OnClickListener() {
                   public void onClick(DialogInterface dialog,
@@ -307,14 +324,40 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
                 });
         builder.setPositiveButton("Да",
                 new DialogInterface.OnClickListener() {
+                  @RequiresApi(api = Build.VERSION_CODES.O)
                   public void onClick(DialogInterface dialog,
                                       int which) {
                     Toast.makeText(getApplicationContext(),"Бронирование...",Toast.LENGTH_LONG).show();
-                    Intent Intent = new Intent(MapShowActivity.this, ReserveActivity.class);
-                    currentMarker.put("myLat",mLastKnownLocation.getLatitude());
-                    currentMarker.put("myLon",mLastKnownLocation.getLongitude());
-                    Intent.putExtra("currentMarker", currentMarker);
-                    startActivity(Intent);
+                    HashMap order=new HashMap();
+                        order.put("car_id",currentMarker.get("objectId"));
+                        order.put("client_id",user.getObjectId());
+                        order.put("status","забронировано");
+                        LocalDateTime dateTime = LocalDateTime.parse(getTime(), DateTimeFormatter.ISO_OFFSET_DATE_TIME);
+                        order.put("time_start_reserve",dateTime.toString());
+                        order.put("time_end_reserve",dateTime.plusMinutes(15).toString());
+                   Backendless.Data.of( "Orders" ).save( order, new AsyncCallback<Map>() {
+                      public void handleResponse( Map response )
+                      {
+                        Log.d("serv_msg",response.toString());
+                        currentMarker.put("orderId",response.get("objectId"));
+                        Intent Intent = new Intent(MapShowActivity.this, ReserveActivity.class);
+                        currentMarker.put("myLat",mLastKnownLocation.getLatitude());
+                        currentMarker.put("myLon",mLastKnownLocation.getLongitude());
+                        Intent.putExtra("currentMarker", currentMarker);
+                        startActivity(Intent);
+                        finish();
+                      }
+
+                      public void handleFault( BackendlessFault fault )
+                      {
+                        // an error has occurred, the error code can be retrieved with fault.getCode()
+                      }
+                    });
+//                    Intent Intent = new Intent(MapShowActivity.this, ReserveActivity.class);
+//                    currentMarker.put("myLat",mLastKnownLocation.getLatitude());
+//                    currentMarker.put("myLon",mLastKnownLocation.getLongitude());
+//                    Intent.putExtra("currentMarker", currentMarker);
+//                    startActivity(Intent);
                   }
                 });
         builder.show();
@@ -452,4 +495,72 @@ public void updatePoints(BackendlessGeoQuery backendlessGeoQuery){
     }
   });
 }
+  public static String doGet(String url)
+          throws Exception {
+
+    URL obj = new URL(url);
+    HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
+
+    //add reuqest header
+    connection.setRequestMethod("GET");
+    connection.setRequestProperty("User-Agent", "Mozilla/5.0" );
+    connection.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
+    connection.setRequestProperty("Content-Type", "application/json");
+
+    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+    String inputLine;
+    StringBuffer response = new StringBuffer();
+
+    while ((inputLine = bufferedReader.readLine()) != null) {
+      response.append(inputLine);
+    }
+    bufferedReader.close();
+
+//      print result
+    Log.d("serv_msg","Response string: " + response.toString());
+
+
+    return response.toString();
+  }
+protected String getTime() {
+String responce="";
+  try {
+    responce=new AsyncTask<Void, String, String>() {
+       @Override
+       protected String doInBackground(Void... voids) {
+         String s = "";
+         try {
+           s = doGet("http://worldtimeapi.org/api/timezone/Europe/Simferopol");
+         } catch (Exception e) {
+           e.printStackTrace();
+         }
+         return s;
+       }
+
+       @Override
+       protected void onPostExecute(final String result) {
+         runOnUiThread(new Runnable() {
+           @Override
+           public void run() {
+                     }
+         });
+       }
+     }.execute().get();
+  } catch (ExecutionException e) {
+    e.printStackTrace();
+  } catch (InterruptedException e) {
+    e.printStackTrace();
+  }
+  JSONObject json= null;
+  try {
+    json = new JSONObject(responce);
+    responce=json.getString("datetime");
+    Log.d("serv_msg","responce "+responce);
+  } catch (JSONException e) {
+    e.printStackTrace();
+  }
+
+  return responce;
+}
+
 }

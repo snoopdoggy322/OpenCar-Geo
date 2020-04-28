@@ -1299,6 +1299,7 @@ drawable ym_ic_yandex_money_list
 drawable ym_ic_yandex_money_virtual_list
 id ALT
 id CTRL
+id CashText
 id FUNCTION
 id META
 id SHIFT
