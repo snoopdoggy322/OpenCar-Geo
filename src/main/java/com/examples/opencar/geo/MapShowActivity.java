@@ -66,6 +66,7 @@ import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -332,6 +333,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
                         order.put("car_id",currentMarker.get("objectId"));
                         order.put("client_id",user.getObjectId());
                         order.put("status","забронировано");
+                         order.put("marker_id",currentMarker.get("markerId"));
                         LocalDateTime dateTime = LocalDateTime.parse(getTime(), DateTimeFormatter.ISO_OFFSET_DATE_TIME);
                         order.put("time_start_reserve",dateTime.toString());
                         order.put("time_end_reserve",dateTime.plusMinutes(15).toString());
@@ -345,7 +347,22 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
                         currentMarker.put("myLon",mLastKnownLocation.getLongitude());
                         Intent.putExtra("currentMarker", currentMarker);
                         startActivity(Intent);
-                        finish();
+                        LatLng ll=new LatLng((double)currentMarker.get("lat"),(double)currentMarker.get("lon"));
+                        GeoPoint GP = new GeoPoint(ll.latitude,ll.longitude);
+                        GP.setObjectId(currentMarker.get("markerId").toString());
+                        GP.setCategories(Collections.singleton("reservedCars"));
+                        Backendless.Geo.savePoint(GP, new AsyncCallback<GeoPoint>() {
+                          @Override
+                          public void handleResponse(GeoPoint response) {
+
+                          }
+
+                          @Override
+                          public void handleFault(BackendlessFault fault) {
+
+                          }
+                        });
+                       //finish();
                       }
 
                       public void handleFault( BackendlessFault fault )

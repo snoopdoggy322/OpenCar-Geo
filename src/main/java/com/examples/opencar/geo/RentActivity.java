@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.location.Location;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -26,6 +27,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
@@ -36,6 +38,7 @@ import android.widget.Toast;
 import com.backendless.Backendless;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
+import com.backendless.geo.BackendlessGeoQuery;
 import com.backendless.geo.GeoPoint;
 import com.google.android.gms.maps.model.LatLng;
 
@@ -50,6 +53,9 @@ private double cash=0;
 private double plan=0;
 private HashMap currentMarker=null;
 private Button buttonEnd;
+    Location mLastKnownLocation;
+    HashMap carData = new HashMap();
+    GeoPoint point = new  GeoPoint();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,9 +65,9 @@ private Button buttonEnd;
         cashText=findViewById(R.id.CashText);
         Intent intent = getIntent();
         currentMarker= (HashMap) intent.getSerializableExtra("currentMarker");
+        mLastKnownLocation=MapShowActivity.getLastLocation(this);
         textView.setText(currentMarker.toString());
-        plan= Double.parseDouble(currentMarker.get("cost").toString());
-buttonEnd.setOnClickListener(new View.OnClickListener() {
+        buttonEnd.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
     Backendless.Data.of("Orders").findById(currentMarker.get("orderId").toString(), new AsyncCallback<Map>() {
@@ -94,15 +100,16 @@ buttonEnd.setOnClickListener(new View.OnClickListener() {
 
     }
 });
-
-        LatLng ll=new LatLng((double)currentMarker.get("lat"),(double)currentMarker.get("lon"));
-        GeoPoint GP = new GeoPoint(ll.latitude,ll.longitude);
-        GP.setObjectId(currentMarker.get("markerId").toString());
-        GP.setCategories(Collections.singleton("onLineCars"));
-        Backendless.Geo.savePoint(GP, new AsyncCallback<GeoPoint>() {
+        final BackendlessGeoQuery geoQuery = new BackendlessGeoQuery();
+        geoQuery.addCategory("onLineCars");
+        geoQuery.setIncludeMeta(true);
+        Backendless.Geo.getPoints(geoQuery, new AsyncCallback<List<GeoPoint>>() {
             @Override
-            public void handleResponse(GeoPoint response) {
-
+            public void handleResponse(List<GeoPoint> response) {
+                point=response.get(0);
+                HashMap[] hm=(HashMap[]) point.getMetadata().get("CarData");
+                carData= hm[0];
+                plan= Double.parseDouble(carData.get("cost").toString());
             }
 
             @Override
@@ -110,16 +117,20 @@ buttonEnd.setOnClickListener(new View.OnClickListener() {
 
             }
         });
+
+
+
+
         runTimer();
 
 
 
     }
 
-private void endRent(long rentSec){
+private void endRent(final long rentSec){
     AlertDialog.Builder builder = new AlertDialog.Builder(
             RentActivity.this);
-    builder.setTitle("Вы действительно желаете выполнить завершение бронирования "+currentMarker.get("model")+"?");
+    builder.setTitle("Вы действительно желаете выполнить завершение аренды "+carData.get("model")+"?");
     builder.setMessage("С вашего счета будет списано - "+String.format("%32.2f",(rentSec*plan/60))+"  "+rentSec);
     builder.setNeutralButton("Отмена",
             new DialogInterface.OnClickListener() {
@@ -130,14 +141,13 @@ private void endRent(long rentSec){
             });
     builder.setPositiveButton("Да",
             new DialogInterface.OnClickListener() {
+                @RequiresApi(api = Build.VERSION_CODES.O)
                 public void onClick(DialogInterface dialog,
                                     int which) {
                     Toast.makeText(getApplicationContext(),"Отмена...",Toast.LENGTH_LONG).show();
-                    LatLng ll=new LatLng((double)currentMarker.get("lat"),(double)currentMarker.get("lon"));
-                    GeoPoint GP = new GeoPoint(ll.latitude,ll.longitude);
-                    GP.setObjectId(currentMarker.get("markerId").toString());
-                    GP.setCategories(Collections.singleton("readyCars"));
-                    Backendless.Geo.savePoint(GP, new AsyncCallback<GeoPoint>() {
+
+                    point.setCategories(Collections.singleton("readyCars"));
+                    Backendless.Geo.savePoint(point, new AsyncCallback<GeoPoint>() {
                         @Override
                         public void handleResponse(GeoPoint response) {
 
@@ -147,8 +157,28 @@ private void endRent(long rentSec){
                         public void handleFault(BackendlessFault fault) {
                         }
                     });
-                    onBackPressed();onBackPressed();
-                     finish();
+                    HashMap order=new HashMap();
+                    order.put("objectId",currentMarker.get("orderId"));
+                    order.put("status","Аренда закончена");
+                    LocalDateTime dateTime = LocalDateTime.parse(getTime(), DateTimeFormatter.ISO_OFFSET_DATE_TIME);
+                    order.put("time_end_rent",dateTime.toString());
+                    order.put("cost",(rentSec*plan/60));
+                    Backendless.Data.of("Orders").save(order, new AsyncCallback<Map>() {
+                        @Override
+                        public void handleResponse(Map response) {
+                            Intent Intent = new Intent(RentActivity.this, MapShowActivity.class);
+                            startActivity(Intent);
+                            finish();
+                        }
+
+                        @Override
+                        public void handleFault(BackendlessFault fault) {
+
+                        }
+                    });
+
+
+
                 }
             });
     builder.show();

@@ -3,20 +3,30 @@ package com.examples.opencar.geo;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
+import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
+import com.backendless.persistence.DataQueryBuilder;
+import com.google.android.gms.maps.model.LatLng;
 
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
@@ -124,10 +134,55 @@ public class MainLogin extends AppCompatActivity {
 			msg += entry.getKey() + " : " + entry.getValue() + "\n";
 
 
-		Intent intent = new Intent(this, LoginResult.class);
-		intent.putExtra(LoginResult.userInfo_key, msg);
-		intent.putExtra(LoginResult.logoutButtonState_key, true);
+//		Intent intent = new Intent(this, LoginResult.class);
+//		intent.putExtra(LoginResult.userInfo_key, msg);
+//		intent.putExtra(LoginResult.logoutButtonState_key, true);
 		//startActivity(intent);
+
+		String whereClause = "status='забронировано' and client_id='"+user.getObjectId()+"'";
+		DataQueryBuilder queryBuilder = DataQueryBuilder.create();
+		queryBuilder.setWhereClause( whereClause );
+		Backendless.Data.of( "Orders" ).find(queryBuilder, new AsyncCallback<List<Map>>() {
+			@Override
+			public void handleResponse(List<Map> response) {
+			    if(response.size()!=0){
+				HashMap currentMarker = new HashMap();
+				Intent Intent = new Intent(MainLogin.this, ReserveActivity.class);
+				currentMarker.put("orderId",(String)response.get(0).get("objectId"));
+				Log.d("DEBUGG",response.get(0).toString());
+				Intent.putExtra("currentMarker", currentMarker);
+				startActivity(Intent);
+				finish();}
+
+			}
+
+			@Override
+			public void handleFault(BackendlessFault fault) {
+
+			}
+		});
+		String whereClause2 = "status='Начата аренда' and client_id='"+user.getObjectId()+"'";
+		DataQueryBuilder queryBuilder2 = DataQueryBuilder.create();
+		queryBuilder2.setWhereClause( whereClause2 );
+		Backendless.Data.of( "Orders" ).find(queryBuilder2, new AsyncCallback<List<Map>>() {
+			@Override
+			public void handleResponse(List<Map> response) {
+				if(response.size()!=0){
+					HashMap currentMarker = new HashMap();
+					Intent Intent = new Intent(MainLogin.this, RentActivity.class);
+					currentMarker.put("orderId",(String)response.get(0).get("objectId"));
+					Log.d("DEBUGG",response.get(0).toString());
+					Intent.putExtra("currentMarker", currentMarker);
+					startActivity(Intent);
+					finish();}
+
+			}
+
+			@Override
+			public void handleFault(BackendlessFault fault) {
+
+			}
+		});
 		startActivity( new Intent( this, GeoCategoriesListActivity.class ) );
 		finish();
 	}

@@ -7,6 +7,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.location.Location;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -23,6 +24,7 @@ import android.widget.Toast;
 import com.backendless.Backendless;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
+import com.backendless.geo.BackendlessGeoQuery;
 import com.backendless.geo.GeoPoint;
 import com.google.android.gms.maps.model.LatLng;
 
@@ -33,6 +35,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
@@ -45,6 +48,9 @@ private static final long START_TIME=900000;
 private  TextView TextTimer;
 private CountDownTimer CountDownTimer;
 private long TimeLeft=START_TIME;
+Location mLastKnownLocation;
+HashMap carData = new HashMap();
+    GeoPoint point = new  GeoPoint();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Intent intent = getIntent();
@@ -53,38 +59,47 @@ private long TimeLeft=START_TIME;
         buttonCancell=findViewById(R.id.buttonCancell);
         buttonStart=findViewById(R.id.buttonStart);
         currentMarker= (HashMap) intent.getSerializableExtra("currentMarker");
+        mLastKnownLocation=MapShowActivity.getLastLocation(this);
+        TextTimer =findViewById(R.id.textView_timer);
 
-        TextTimer   =findViewById(R.id.textView_timer);
-        TextView textView = findViewById(R.id.textView3);
-        WebView webview = (WebView) findViewById(R.id.webView);
-
+        final TextView textView = findViewById(R.id.textView3);
+        final WebView webview = (WebView) findViewById(R.id.webView);
         webview.setWebViewClient(new WebViewClient());
         webview.getSettings().setJavaScriptEnabled(true);
-        webview.loadUrl("http://maps.google.com/maps?" + "saddr="+currentMarker.get("myLat").toString()+","
-                +currentMarker.get("myLon").toString()
-                +"&daddr="+currentMarker.get("lat").toString()+","
-                +currentMarker.get("lon").toString()+
-                "&travelmode=walking");
-LatLng ll=new LatLng((double)currentMarker.get("lat"),(double)currentMarker.get("lon"));
-        GeoPoint GP = new GeoPoint(ll.latitude,ll.longitude);
-        GP.setObjectId(currentMarker.get("markerId").toString());
-        GP.setCategories(Collections.singleton("reservedCars"));
-        Backendless.Geo.savePoint(GP, new AsyncCallback<GeoPoint>() {
-            @Override
-            public void handleResponse(GeoPoint response) {
+        final BackendlessGeoQuery geoQuery = new BackendlessGeoQuery();
+        geoQuery.addCategory("reservedCars");
+        geoQuery.setIncludeMeta(true);
+    Backendless.Geo.getPoints(geoQuery, new AsyncCallback<List<GeoPoint>>() {
+        @Override
+        public void handleResponse(List<GeoPoint> response) {
+            point=response.get(0);
+            HashMap[] hm=(HashMap[]) point.getMetadata().get("CarData");
+            carData= hm[0];
+            webview.loadUrl("http://maps.google.com/maps?" + "saddr="+mLastKnownLocation.getLatitude()+","
+                    +mLastKnownLocation.getLongitude()
+                    +"&daddr="+point.getLatitude()+","
+                    +point.getLongitude()+
+                    "&travelmode=walking");
+            Log.d("DEBUGG",point.toString());
+            Log.d("DEBUGG",carData.toString());
+            textView.setText("Ваш автомобиль-"+carData.get("model").toString()+
+                   "\nГос. Номер -"+carData.get("number").toString()+carData.toString());
+        }
 
-            }
+        @Override
+        public void handleFault(BackendlessFault fault) {
 
-            @Override
-            public void handleFault(BackendlessFault fault) {
+        }
+    });
 
-            }
-        });
+
+
+
+
 startTimer();
 
 
-       textView.setText("Ваш автомобиль-"+currentMarker.get("model").toString()+
-               "\nГос. Номер -"+currentMarker.get("number").toString()+currentMarker.toString());
+
 
 
 
@@ -101,9 +116,21 @@ startTimer();
                Backendless.Data.of( "Orders" ).save( order, new AsyncCallback<Map>() {
                    public void handleResponse( Map response )
                    {
-                       Intent Intent = new Intent(ReserveActivity.this, RentActivity.class);
-                       Intent.putExtra("currentMarker", currentMarker);
-                       startActivity(Intent);
+                      point.setCategories(Collections.singleton("onLineCars"));
+                       Backendless.Geo.savePoint(point, new AsyncCallback<GeoPoint>() {
+                           @Override
+                           public void handleResponse(GeoPoint response) {
+                               Intent Intent = new Intent(ReserveActivity.this, RentActivity.class);
+                               Intent.putExtra("currentMarker", currentMarker);
+                               startActivity(Intent);
+                           }
+
+                           @Override
+                           public void handleFault(BackendlessFault fault) {
+
+                           }
+                       });
+
                    }
 
                    public void handleFault( BackendlessFault fault )
@@ -147,7 +174,7 @@ private void updateCountDownText(){
 private void reserveCancel(){
     AlertDialog.Builder builder = new AlertDialog.Builder(
             ReserveActivity.this);
-    builder.setTitle("Вы действительно желаете выполнить отмену брони "+currentMarker.get("model")+"?" );
+    builder.setTitle("Вы действительно желаете выполнить отмену брони "+carData.get("model")+"?" );
     builder.setMessage("С вашего счета ничего не будет списано");
     builder.setNeutralButton("Отмена",
             new DialogInterface.OnClickListener() {
@@ -161,11 +188,9 @@ private void reserveCancel(){
                 public void onClick(DialogInterface dialog,
                                     int which) {
                     Toast.makeText(getApplicationContext(),"Отмена...",Toast.LENGTH_LONG).show();
-                    LatLng ll=new LatLng((double)currentMarker.get("lat"),(double)currentMarker.get("lon"));
-                    GeoPoint GP = new GeoPoint(ll.latitude,ll.longitude);
-                    GP.setObjectId(currentMarker.get("markerId").toString());
-                    GP.setCategories(Collections.singleton("readyCars"));
-                    Backendless.Geo.savePoint(GP, new AsyncCallback<GeoPoint>() {
+
+                    point.setCategories(Collections.singleton("readyCars"));
+                    Backendless.Geo.savePoint(point, new AsyncCallback<GeoPoint>() {
                         @Override
                         public void handleResponse(GeoPoint response) {
 
