@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -36,6 +37,7 @@ import android.os.Handler;
 import android.widget.Toast;
 
 import com.backendless.Backendless;
+import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
 import com.backendless.geo.BackendlessGeoQuery;
@@ -56,6 +58,7 @@ private Button buttonEnd;
     Location mLastKnownLocation;
     HashMap carData = new HashMap();
     GeoPoint point = new  GeoPoint();
+    BackendlessUser user=Backendless.UserService.CurrentUser();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +68,7 @@ private Button buttonEnd;
         cashText=findViewById(R.id.CashText);
         Intent intent = getIntent();
         currentMarker= (HashMap) intent.getSerializableExtra("currentMarker");
+
         mLastKnownLocation=MapShowActivity.getLastLocation(this);
         textView.setText(currentMarker.toString());
         buttonEnd.setOnClickListener(new View.OnClickListener() {
@@ -88,6 +92,7 @@ private Button buttonEnd;
             Log.d("timeparse",time_end.toString());
             Duration duration = Duration.between(time_end, time_start);
            long diff = Math.abs(duration.getSeconds());
+           seconds= (int) diff;
             endRent(diff);
         }
 
@@ -150,32 +155,74 @@ private void endRent(final long rentSec){
                     Backendless.Geo.savePoint(point, new AsyncCallback<GeoPoint>() {
                         @Override
                         public void handleResponse(GeoPoint response) {
+                            final HashMap order=new HashMap();
+                            order.put("objectId",currentMarker.get("orderId"));
+                            order.put("status","Аренда закончена");
+                            LocalDateTime dateTime = LocalDateTime.parse(getTime(), DateTimeFormatter.ISO_OFFSET_DATE_TIME);
+                            order.put("time_end_rent",dateTime.toString());
+                            order.put("cost",(rentSec*plan/60));
+                            Backendless.Data.of("Orders").save(order, new AsyncCallback<Map>() {
+                                @Override
+                                public void handleResponse(Map response) {
+                                    HashMap orderDetail=new HashMap();
+                                    orderDetail.put("Order_id",order.get("objectId"));
+                                    orderDetail.put("Start",point.getLongitude().toString()+";"+point.getLatitude().toString());
+                                    final Location loc=MapShowActivity.getLastLocation(RentActivity.this);
+                                    orderDetail.put("Finish",loc.getLongitude()+";"+loc.getLatitude());
+                                    orderDetail.put("time_in_way",rentSec);
+                                    orderDetail.put("value",order.get("cost"));
+                                        Backendless.Data.of("RentDetails").save(orderDetail, new AsyncCallback<Map>() {
+                                            @Override
+                                            public void handleResponse(Map response) {
+                                             user.setProperty("vallet",(Double)user.getProperty("vallet")-(double)order.get("cost"));
+                                                Backendless.UserService.update(user, new AsyncCallback<BackendlessUser>() {
+                                                    @Override
+                                                    public void handleResponse(BackendlessUser response) {
+                                                        point.setLatitude(loc.getLatitude());
+                                                        point.setLongitude(loc.getLongitude());
+                                                        Backendless.Geo.savePoint(point, new AsyncCallback<GeoPoint>() {
+                                                            @Override
+                                                            public void handleResponse(GeoPoint response) {
+                                                                Intent Intent = new Intent(RentActivity.this, MapShowActivity.class);
+                                                                startActivity(Intent);
+                                                                finish();
+                                                            }
 
+                                                            @Override
+                                                            public void handleFault(BackendlessFault fault) {
+
+                                                            }
+                                                        });
+
+                                                    }
+
+                                                    @Override
+                                                    public void handleFault(BackendlessFault fault) {
+
+                                                    }
+                                                });
+                                            }
+
+                                            @Override
+                                            public void handleFault(BackendlessFault fault) {
+
+                                            }
+                                        });
+
+                                }
+
+                                @Override
+                                public void handleFault(BackendlessFault fault) {
+
+                                }
+                            });
                         }
 
                         @Override
                         public void handleFault(BackendlessFault fault) {
                         }
                     });
-                    HashMap order=new HashMap();
-                    order.put("objectId",currentMarker.get("orderId"));
-                    order.put("status","Аренда закончена");
-                    LocalDateTime dateTime = LocalDateTime.parse(getTime(), DateTimeFormatter.ISO_OFFSET_DATE_TIME);
-                    order.put("time_end_rent",dateTime.toString());
-                    order.put("cost",(rentSec*plan/60));
-                    Backendless.Data.of("Orders").save(order, new AsyncCallback<Map>() {
-                        @Override
-                        public void handleResponse(Map response) {
-                            Intent Intent = new Intent(RentActivity.this, MapShowActivity.class);
-                            startActivity(Intent);
-                            finish();
-                        }
 
-                        @Override
-                        public void handleFault(BackendlessFault fault) {
-
-                        }
-                    });
 
 
 

@@ -8,7 +8,7 @@ buildscript {
 
     dependencies {
 
-        classpath 'com.android.tools.build:gradle:3.6.0'
+        classpath 'com.android.tools.build:gradle:3.6.1'
         // NOTE: Do not place your application dependencies here;
         // they belong in the individual module build.gradle files;
     }
@@ -98,7 +98,9 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.5.2'
     implementation 'com.yandex.money:checkout:3.0.2'
     implementation "com.yandex.android:authsdk:2.1.1"
-
     implementation 'com.google.code.gson:gson:2.8.6'
+
+    implementation "com.android.support:appcompat-v7:28.0.0"
+    implementation "com.android.support:design:28.0.0"
 
 }

@@ -66,6 +66,7 @@ Button btn;
     private  BigDecimal Value= BigDecimal.valueOf(100.00);
     BackendlessUser user= Backendless.UserService.CurrentUser();
     double CurrentValue= Double.valueOf(user.getProperty("vallet").toString());
+    String formatedCV=String.format("%32.2f",CurrentValue);
     EditText AmountEdit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,7 +75,7 @@ Button btn;
         setContentView(R.layout.activity_vallet);
         btn = findViewById(R.id.button3);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar_back);
-        myToolbar.setTitle(Double.toString(CurrentValue));
+        myToolbar.setTitle(formatedCV);
         myToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,7 +86,7 @@ Button btn;
 
         TextView nameText = findViewById(R.id.valletText);
         AmountEdit=findViewById(R.id.editText);
-        nameText.setText(Double.toString(CurrentValue)+" \u20BD");
+        nameText.setText(formatedCV+" \u20BD");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

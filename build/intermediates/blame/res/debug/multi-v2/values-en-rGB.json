@@ -4,24 +4,7 @@
             "outputFile": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rGB\\values-en-rGB.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\999864b2b84fb144877f6fcea5aee8d7\\play-services-basement-17.0.0\\res\\values-en-rGB\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "251",
-                        "endColumns": "196",
-                        "endOffsets": "447"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "3904",
-                        "endColumns": "196",
-                        "endOffsets": "4096"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\6784e272fe4a57e2290520e7524c283e\\appcompat-1.0.0\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\815dba35729137a0f735880dd630cca0\\appcompat-1.0.0\\res\\values-en-rGB\\values-en-rGB.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\aa9bf64ea90364ee4454f2b23260e00d\\jetified-play-services-wallet-16.0.1\\res\\values-en-rGB\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "204",
-                        "endColumns": "99",
-                        "endOffsets": "303"
-                    },
-                    "to": {
-                        "startLines": "49",
-                        "startColumns": "4",
-                        "startOffsets": "5595",
-                        "endColumns": "103",
-                        "endOffsets": "5694"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\767017b07256b24a64ded9cb713958df\\play-services-base-17.0.0\\res\\values-en-rGB\\values.xml",
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\8765ee310d2b175c8ed2c7a28072810e\\jetified-play-services-base-17.0.0\\res\\values-en-rGB\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -72,7 +38,41 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\70d91b4820d2cd77ec489350183e960e\\core-1.0.0\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\14ca6b0e1ebd9b2cfce15b125455109d\\jetified-play-services-basement-17.0.0\\res\\values-en-rGB\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "251",
+                        "endColumns": "196",
+                        "endOffsets": "447"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "3904",
+                        "endColumns": "196",
+                        "endOffsets": "4096"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\32365fb24b07870be71a5538e188f26d\\jetified-play-services-wallet-16.0.1\\res\\values-en-rGB\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "204",
+                        "endColumns": "99",
+                        "endOffsets": "303"
+                    },
+                    "to": {
+                        "startLines": "49",
+                        "startColumns": "4",
+                        "startOffsets": "5595",
+                        "endColumns": "103",
+                        "endOffsets": "5694"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\e115159ef97561644a812a5336b43ee5\\core-1.0.0\\res\\values-en-rGB\\values-en-rGB.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

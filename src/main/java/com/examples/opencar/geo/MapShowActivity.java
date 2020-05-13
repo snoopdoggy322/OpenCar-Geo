@@ -11,6 +11,7 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.ActivityCompat;
@@ -47,6 +48,8 @@ import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.mikepenz.iconics.typeface.FontAwesome;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.model.DividerDrawerItem;
@@ -94,16 +97,32 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
   public static Units units = Units.KILOMETERS;
   public FusedLocationProviderClient mFusedLocationProviderClient;
   public HashMap currentMarker = null;
-  String userData = null;
   private BackendlessUser user;
   private final BackendlessGeoQuery backendlessGeoQuery = new BackendlessGeoQuery();
+  private LinearLayout llBottomSheet;
+  private BottomSheetBehavior bottomSheetBehavior ;
   @Override
   public void onCreate(Bundle savedInstanceState) {
     user=Backendless.UserService.CurrentUser();
-    userData = Backendless.UserService.CurrentUser().toString();
     super.onCreate(savedInstanceState);
     setContentView(R.layout.map_show);
 
+
+    llBottomSheet = (LinearLayout) findViewById(R.id.bottom_sheet);
+    bottomSheetBehavior = BottomSheetBehavior.from(llBottomSheet);
+    bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
+    bottomSheetBehavior.setHideable(true);
+    final FloatingActionButton fab = findViewById(R.id.fab);
+    bottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
+      @Override
+      public void onStateChanged(@NonNull View bottomSheet, int newState) {
+      }
+
+      @Override
+      public void onSlide(@NonNull View bottomSheet, float slideOffset) {
+        fab.animate().scaleX(1 - slideOffset).scaleY(1 - slideOffset).setDuration(0).start();
+      }
+    });
 
     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
@@ -117,7 +136,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
 
                     new PrimaryDrawerItem().withName("Профиль").withIcon(FontAwesome.Icon.faw_edit).withBadge("1").withIdentifier(1),
                     new PrimaryDrawerItem().withName("Кошелёк").withIcon(FontAwesome.Icon.faw_money).withIdentifier(2),
-                    new PrimaryDrawerItem().withName("Мои поездки").withIcon(FontAwesome.Icon.faw_eye).withBadge("6").withIdentifier(3),
+                    new PrimaryDrawerItem().withName("Мои поездки").withIcon(FontAwesome.Icon.faw_car).withBadge("6").withIdentifier(3),
                     new SectionDrawerItem().withName(R.string.drawer_item_settings),
                     new SecondaryDrawerItem().withName(R.string.drawer_item_help).withIcon(FontAwesome.Icon.faw_cog),
                     new SecondaryDrawerItem().withName(R.string.drawer_item_open_source).withIcon(FontAwesome.Icon.faw_question).setEnabled(false),
@@ -129,13 +148,16 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
               public void onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
                 if (drawerItem.getIdentifier() == 1) {
                   Intent Intent = new Intent(MapShowActivity.this, userDataActivity.class);
-                  Intent.putExtra("userData", userData);
                   startActivity(Intent);
 
                 }
                 if (drawerItem.getIdentifier() == 2) {
                   Intent Intent = new Intent(MapShowActivity.this, ValletActivity.class);
-                  Intent.putExtra("userData", userData);
+                  startActivity(Intent);
+
+                }
+                if (drawerItem.getIdentifier() == 3) {
+                  Intent Intent = new Intent(MapShowActivity.this, OrdersActivity.class);
                   startActivity(Intent);
 
                 }
@@ -191,7 +213,6 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
           @Override
           public void onMapReady(final GoogleMap googleMap) {
             googleMap.setMyLocationEnabled(true);
-            googleMap.getUiSettings().setZoomControlsEnabled(true);
             googleMap.getUiSettings().setCompassEnabled(true);
 
 
@@ -220,13 +241,13 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
                 carDataMap[0].put("lat",geoPoint.getLatitude());
                 carDataMap[0].put("lon",geoPoint.getLongitude());
                 carDataMap[0].put("markerId",geoPoint.getObjectId());
-                snip = (String) carDataMap[0].toString();
+                snip = (String) "Тариф - "+carDataMap[0].get("cost")+" Руб/Мин";
               }
 
               googleMap.addMarker(new MarkerOptions().position(new LatLng(geoPoint.getLatitude(), geoPoint.getLongitude()))
                       .snippet(snip)
-                      .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon))
-                      .title("ObjectId: " + geoPoint.getObjectId())
+                      .icon(BitmapDescriptorFactory.fromResource(R.drawable.caricon))
+                      .title((String) carDataMap[0].get("model"))
               ).setTag(carDataMap);
               ;
               googleMap.setTrafficEnabled(false);
@@ -245,7 +266,6 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
                 HashMap[] map = (HashMap[]) marker.getTag();
                 ModelText.setText((String) map[0].get("model"));
                 CostText.setText(map[0].get("cost").toString() + " ₽/Мин");
-
                 LocationText.setText(getAddressFromLocation(marker.getPosition().latitude,marker.getPosition().longitude));
                 NumberText.setText((String) map[0].get("number"));
 
@@ -271,21 +291,20 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
   }
 
   public void setMapHeight(int re) {
-    LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) findViewById(R.id.map).getLayoutParams(); // получаем параметры
-    if (re == -1) {
-      params.height = 1000; // меняем высоту
-    } else
-      params.height = params.MATCH_PARENT;
 
-    findViewById(R.id.map).setLayoutParams(params);
+    if (re == -1) {
+      bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED); // меняем высоту
+    } else
+      bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
+
 
   }
 
   private void initUI() {
     categoryTitle = (TextView) findViewById(R.id.categoryTitle);
     ModelText = findViewById(R.id.textView4);
-    NumberText = findViewById(R.id.textView11);
-    LocationText = findViewById(R.id.textView12);
+    NumberText = findViewById(R.id.textView12);
+    LocationText = findViewById(R.id.textView11);
     CostText = findViewById(R.id.textView13);
 
     showAsTextButton = (Button) findViewById(R.id.showAsTextButton);
@@ -396,7 +415,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
     if (drawerResult.isDrawerOpen()) {
       drawerResult.closeDrawer();
     }
-    if (findViewById(R.id.map).getHeight() == 1000) {
+    if (bottomSheetBehavior.getState()==BottomSheetBehavior.STATE_EXPANDED||bottomSheetBehavior.getState()==BottomSheetBehavior.STATE_COLLAPSED) {
       setMapHeight(1);
     } else {
       super.onBackPressed();
@@ -420,7 +439,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
 
   private String getAddressFromLocation(double latitude, double longitude) {
 
-    Geocoder geocoder = new Geocoder(this, Locale.ENGLISH);
+    Geocoder geocoder = new Geocoder(this, Locale.getDefault());
 
 
     try {
@@ -441,7 +460,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
 
     } catch (IOException e) {
       e.printStackTrace();
-      return "Could not get address..!"+e.getMessage();
+      return "Could not get address..!"+e.toString();
     }
   }
 public void updatePoints(BackendlessGeoQuery backendlessGeoQuery){
@@ -472,7 +491,7 @@ public void updatePoints(BackendlessGeoQuery backendlessGeoQuery){
 
             googleMap.addMarker(new MarkerOptions().position(new LatLng(geoPoint.getLatitude(), geoPoint.getLongitude()))
                     .snippet(snip)
-                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon))
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.caricon))
                     .title("ObjectId: " + geoPoint.getObjectId())
             ).setTag(carDataMap);
             ;

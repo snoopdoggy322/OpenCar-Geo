@@ -1175,6 +1175,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable caricon
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1353,6 +1354,7 @@ id bkndlsLoginButton
 id blocking
 id book_now
 id bottom
+id bottom_sheet
 id button
 id button3
 id buttonCancell
@@ -1416,6 +1418,7 @@ id donate_with_google
 id drawer_layout
 id editText
 id editText_bkndlsBackendlessUserInfo
+id edit_button
 id edit_query
 id emailField
 id end
@@ -1425,12 +1428,14 @@ id enterAlways
 id enterAlwaysCollapsed
 id errorView
 id exitUntilCollapsed
+id expListView
 id expand_activities_button
 id expanded_menu
 id expiryAndCscContainer
 id expiryContainer
 id expiryEditText
 id expiryInputLayout
+id fab
 id feeLayout
 id feeView
 id fill
@@ -1487,6 +1492,7 @@ id loadingView
 id loginField
 id logo
 id logo_only
+id mailText
 id map
 id mapBoundariesRadio
 id masked
@@ -1550,6 +1556,7 @@ id rememberLoginBox
 id repeat
 id reserveButton
 id restoreLink
+id restoreLink2
 id restorePasswordButton
 id right
 id right_icon
@@ -1562,6 +1569,7 @@ id savePaymentMethodMessage
 id savePaymentMethodSelectionContainer
 id savePaymentMethodSwitch
 id savePaymentMethodSwitchMessage
+id save_button
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1638,6 +1646,9 @@ id textView12
 id textView13
 id textView14
 id textView15
+id textView16
+id textView17
+id textView18
 id textView2
 id textView3
 id textView4
@@ -1645,7 +1656,6 @@ id textView5
 id textView6
 id textView7
 id textView8
-id textView9
 id textView_bkndlsBackendlessUserInfo
 id textView_timer
 id text_input_password_toggle
@@ -1734,6 +1744,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login_result
 layout activity_main_login
+layout activity_orders
 layout activity_register
 layout activity_rent
 layout activity_reserve
@@ -1741,6 +1752,7 @@ layout activity_restore_password
 layout activity_success_tokenize
 layout activity_user_data
 layout activity_vallet
+layout bottom_sheet
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1768,6 +1780,7 @@ layout edit_query
 layout filter
 layout geo_categories_list
 layout geopoints_text
+layout item_row
 layout list_item_with_arrow
 layout map_show
 layout mtrl_layout_snackbar
@@ -1912,6 +1925,7 @@ string gp_WebApp_ClientId
 string gp_WebApp_ClientSecret
 string hide_bottom_view_on_scroll_behavior
 string initial_radius
+string ion_search
 string library_AndroidIconics_author
 string library_AndroidIconics_authorWebsite
 string library_AndroidIconics_isOpenSource

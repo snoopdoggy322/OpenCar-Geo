@@ -37,6 +37,7 @@
         android:label="@string/app_name"
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
+        <activity android:name="com.examples.opencar.geo.OrdersActivity" />
         <activity android:name="com.examples.opencar.geo.RentActivity" />
         <activity android:name="com.examples.opencar.geo.SuccessTokenizeActivity" />
         <activity android:name="com.examples.opencar.geo.ValletActivity" />

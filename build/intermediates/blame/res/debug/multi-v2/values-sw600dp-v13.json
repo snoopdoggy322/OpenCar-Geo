@@ -4,24 +4,7 @@
             "outputFile": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\798762e84521654f8a591c18089e23d5\\jetified-library-0.9.5\\res\\values-sw600dp-v13\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "4",
-                        "startOffsets": "217",
-                        "endColumns": "63",
-                        "endOffsets": "276"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1214",
-                        "endColumns": "63",
-                        "endOffsets": "1273"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\6784e272fe4a57e2290520e7524c283e\\appcompat-1.0.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\815dba35729137a0f735880dd630cca0\\appcompat-1.0.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\d077bb499755e6a460c5e57ac47045eb\\material-1.0.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\87c36477cb2943c619e69da637aeb8a9\\jetified-library-0.9.5\\res\\values-sw600dp-v13\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "217",
+                        "endColumns": "63",
+                        "endOffsets": "276"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1214",
+                        "endColumns": "63",
+                        "endOffsets": "1273"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\9d33acae53a8de85852693c372a6eb42\\material-1.0.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -57,7 +57,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\e1818e09ed24d10a5ccac92ba6c0670d\\jetified-checkout-3.0.2\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\b21fea5ccbe84927292a33547015e354\\jetified-checkout-3.0.2\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

@@ -3,7 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.backendless/backendless/5.3.0/f86b04b1dd4b2fff4e819ca9c75feb936503ac04/backendless-5.3.0.jar!/" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.backendless/backendless/5.3.0/557a057c4c113ac529db5553d088fa736939267e/backendless-5.3.0-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.backendless/backendless/5.3.0/d54c706980f82e090d07d2099274a47708998d9a/backendless-5.3.0-sources.jar!/" />
     </SOURCES>

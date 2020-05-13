@@ -1,59 +1,23 @@
 [
     {
-        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_drawer_header.xml.flat",
-        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\drawer_header.xml"
-    },
-    {
         "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_login_result.xml.flat",
         "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_login_result.xml"
-    },
-    {
-        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_geopoints_text.xml.flat",
-        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\geopoints_text.xml"
     },
     {
         "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_restore_password.xml.flat",
         "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_restore_password.xml"
     },
     {
-        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_reserve.xml.flat",
-        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_reserve.xml"
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_list_item_with_arrow.xml.flat",
-        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\list_item_with_arrow.xml"
-    },
-    {
-        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_login.xml.flat",
-        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_main_login.xml"
-    },
-    {
-        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_map_show.xml.flat",
-        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\map_show.xml"
-    },
-    {
-        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_filter.xml.flat",
-        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\filter.xml"
-    },
-    {
-        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_geo_categories_list.xml.flat",
-        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\geo_categories_list.xml"
-    },
-    {
-        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_vallet.xml.flat",
-        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_vallet.xml"
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\drawable_caricon.png.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\drawable\\caricon.png"
     },
     {
         "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\drawable_header.jpg.flat",
@@ -76,19 +40,71 @@
         "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_success_tokenize.xml.flat",
-        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_success_tokenize.xml"
-    },
-    {
         "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\drawable_icon.png.flat",
         "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\drawable\\icon.png"
     },
     {
-        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_user_data.xml.flat",
-        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_user_data.xml"
-    },
-    {
         "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_rent.xml.flat",
         "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_rent.xml"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_drawer_header.xml.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\drawer_header.xml"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_geopoints_text.xml.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\geopoints_text.xml"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_reserve.xml.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_reserve.xml"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_list_item_with_arrow.xml.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\list_item_with_arrow.xml"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_bottom_sheet.xml.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\bottom_sheet.xml"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_login.xml.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_main_login.xml"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_item_row.xml.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\item_row.xml"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_map_show.xml.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\map_show.xml"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_filter.xml.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\filter.xml"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_geo_categories_list.xml.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\geo_categories_list.xml"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_orders.xml.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_orders.xml"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_vallet.xml.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_vallet.xml"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_success_tokenize.xml.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_success_tokenize.xml"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_user_data.xml.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_user_data.xml"
     }
 ]
