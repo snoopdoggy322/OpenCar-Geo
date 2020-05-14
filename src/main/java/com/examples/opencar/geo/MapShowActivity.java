@@ -1,6 +1,7 @@
 
 package com.examples.opencar.geo;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -85,6 +86,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
   private TextView categoryTitle, ModelText, LocationText, CostText, NumberText;
   private Button showAsTextButton, filterButton, reserveButton;
 
+  private ProgressDialog progressDialog;
   public static String whereClause = "";
   public static String category = "";
   private static final int DEFAULT_ZOOM = 13;
@@ -106,7 +108,8 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
     user=Backendless.UserService.CurrentUser();
     super.onCreate(savedInstanceState);
     setContentView(R.layout.map_show);
-
+    progressDialog=new ProgressDialog(this);
+    progressDialog.setMessage("Загрузка..");
 
     llBottomSheet = (LinearLayout) findViewById(R.id.bottom_sheet);
     bottomSheetBehavior = BottomSheetBehavior.from(llBottomSheet);
@@ -204,7 +207,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
 
     initUI();
 
-    Backendless.Geo.getPoints(backendlessGeoQuery, new DefaultCallback<List<GeoPoint>>(this) {
+    Backendless.Geo.getPoints(backendlessGeoQuery, new DefaultCallback<List<GeoPoint>>(this,"Загрузка данных...") {
       @Override
       public void handleResponse(final List<GeoPoint> response) {
 
@@ -212,7 +215,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
         ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMapAsync(new OnMapReadyCallback() {
           @Override
           public void onMapReady(final GoogleMap googleMap) {
-            googleMap.setMyLocationEnabled(true);
+            //googleMap.setMyLocationEnabled(true);
             googleMap.getUiSettings().setCompassEnabled(true);
 
 
@@ -261,6 +264,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
             googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
               @Override
               public boolean onMarkerClick(Marker marker) {
+                progressDialog.show();
                 setMapHeight(-1);
                 Toast.makeText(MapShowActivity.this, marker.getTitle(), Toast.LENGTH_SHORT).show();
                 HashMap[] map = (HashMap[]) marker.getTag();
@@ -270,6 +274,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
                 NumberText.setText((String) map[0].get("number"));
 
                 currentMarker=map[0];
+                progressDialog.cancel();
                 return false;
               }
             });
@@ -464,6 +469,7 @@ public class MapShowActivity extends AppCompatActivity implements GoogleApiClien
     }
   }
 public void updatePoints(BackendlessGeoQuery backendlessGeoQuery){
+    progressDialog.show();
   Backendless.Geo.getPoints(backendlessGeoQuery, new AsyncCallback<List<GeoPoint>>() {
     @Override
     public void handleResponse(final List<GeoPoint> response) {
@@ -523,6 +529,7 @@ public void updatePoints(BackendlessGeoQuery backendlessGeoQuery){
         }
 
       });
+      progressDialog.cancel();
     }
 
     @Override

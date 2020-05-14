@@ -25,7 +25,7 @@
 
 
     <string name="app_name2">Login example</string>
-    <string name="btn_LoginBackendless">Log in</string>
+    <string name="btn_LoginBackendless">Вход</string>
     <string name="btn_LogoutBackendless">Logout from Backendless</string>
     <string name="btn_LoginFacebook">Login in Facebook</string>
     <string name="btn_LoginGooglePlus">Login in GooglePlus</string>
@@ -35,27 +35,27 @@
     <string name="editText_BackendlessUserInfo">You should login as Backendless user first.</string>
 
     <string name="register_text">Регистрация</string>
-    <string name="restore_link">Restore</string>
-    <string name="login_prompt">Login:</string>
-    <string name="password_prompt">Password:</string>
-    <string name="password_recovery_page_name">Password Recovery</string>
-    <string name="remember_login_text">Remember me</string>
+    <string name="restore_link">Восстановить</string>
+    <string name="login_prompt">E-Mail:</string>
+    <string name="password_prompt">Пароль:</string>
+    <string name="password_recovery_page_name">Восстановление пароля</string>
+    <string name="remember_login_text">Запомнить меня</string>
 
     <string name="ownerId_field_prompt">OwnerId:</string>
-    <string name="email_field_prompt">Email:</string>
+    <string name="email_field_prompt">E-mail:</string>
     <string name="objectId_field_prompt">ObjectId:</string>
     <string name="created_field_prompt">Created:</string>
-    <string name="password_field_prompt">Password:</string>
+    <string name="password_field_prompt">Пароль:</string>
     <string name="updated_field_prompt">Updated:</string>
-    <string name="name_field_prompt">Name:</string>
+    <string name="name_field_prompt">ФИО:</string>
     <string name="file_field_prompt">File:</string>
-    <string name="registration_success">Registered successfully!</string>
-    <string name="registration_error">Registration error!</string>
+    <string name="registration_success">Регистрация успешна!</string>
+    <string name="registration_error">Ошибка регистрации!</string>
 
-    <string name="restore_password_page_name">Password Restoration</string>
+    <string name="restore_password_page_name">Восстановление пароляn</string>
     <string name="password_recovered_message">We sent an email to your email address with a link to a password change page. Please check your email and follow the link for further instructions.</string>
-    <string name="registration_page_name">Registration</string>
-    <string name="registration_success_message">Thank you for registering with the %1$s.</string>
+    <string name="registration_page_name">Регистрация</string>
+    <string name="registration_success_message">Спасибо вам за регистрацию, мы проверим ваши данные %1$s.</string>
 
 
     <string name="navigation_drawer_open">Open navigation drawer</string>

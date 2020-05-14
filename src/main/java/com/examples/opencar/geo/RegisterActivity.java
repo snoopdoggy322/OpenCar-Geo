@@ -143,13 +143,13 @@ private void onLicenseButtonClicked(){
 		String passwordText = passwordField.getText().toString().trim();
 		String phoneText = phoneField.getText().toString().trim();
 		if (emailText.isEmpty()) {
-			Toast.makeText(this, "Field 'email' cannot be empty.", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "Поле 'email' не может быть пустым.", Toast.LENGTH_SHORT).show();
 			return;
 		} else
 			email = emailText;
 
 		if (passwordText.isEmpty()) {
-			Toast.makeText(this, "Field 'password' cannot be empty.", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "Поле 'password' не может быть пустым.", Toast.LENGTH_SHORT).show();
 			return;
 		}
 		else

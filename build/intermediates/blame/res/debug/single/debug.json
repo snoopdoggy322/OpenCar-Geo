@@ -1,19 +1,27 @@
 [
     {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\drawable_iconcar.png.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\drawable\\iconcar.png"
+    },
+    {
         "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_login_result.xml.flat",
         "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_login_result.xml"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\drawable_carmain.png.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\drawable\\carmain.png"
     },
     {
         "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\layout_activity_restore_password.xml.flat",
         "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\layout\\activity_restore_password.xml"
     },
     {
-        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Ucheba\\diplom\\OpenCar-Geo\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\res\\merged\\debug\\drawable_caricon.png.flat",

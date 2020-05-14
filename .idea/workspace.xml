@@ -71,12 +71,12 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Ucheba\diplom\OpenCar-Geo\src\main\res\drawable" />
+      <recent name="D:\Ucheba\diplom\OpenCar-Geo\src\main\res\mipmap-hdpi" />
+      <recent name="D:\Ucheba\diplom\OpenCar-Geo\libs" />
       <recent name="D:\Ucheba\diplom\OpenCar-Geo\src\main\res\values" />
-      <recent name="D:\Ucheba\diplom\OpenCar-Geo\src\main\res\layout" />
-      <recent name="D:\Ucheba\diplom\OpenCar-Geo\src\main\res" />
-      <recent name="D:\Ucheba\diplom\OpenCar-Geo\src\main\java\com\examples\opencar\geo" />
+      <recent name="D:\Ucheba\diplom\OpenCar-Geo\src\main\res\mipmap-xxxhdpi" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.examples.opencar.geo" />
@@ -87,12 +87,12 @@
     <key name="android.template.parentActivityClass">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Ucheba\diplom\OpenCar-Geo\src\main\res\drawable" />
-      <recent name="D:\Ucheba\diplom\OpenCar-Geo\src\main\res\mipmap-hdpi" />
-      <recent name="D:\Ucheba\diplom\OpenCar-Geo\libs" />
       <recent name="D:\Ucheba\diplom\OpenCar-Geo\src\main\res\values" />
-      <recent name="D:\Ucheba\diplom\OpenCar-Geo\src\main\res\mipmap-xxxhdpi" />
+      <recent name="D:\Ucheba\diplom\OpenCar-Geo\src\main\res\layout" />
+      <recent name="D:\Ucheba\diplom\OpenCar-Geo\src\main\res" />
+      <recent name="D:\Ucheba\diplom\OpenCar-Geo\src\main\java\com\examples\opencar\geo" />
     </key>
   </component>
   <component name="RunDashboard">

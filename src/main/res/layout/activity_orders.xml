@@ -26,12 +26,17 @@
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme"
                 app:navigationIcon="?attr/actionModeCloseDrawable" />
-
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
             <ExpandableListView
                 android:id="@+id/expListView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
             </ExpandableListView>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
         </LinearLayout>
 
     </RelativeLayout>

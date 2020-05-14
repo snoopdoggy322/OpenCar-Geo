@@ -2,6 +2,7 @@ package com.examples.opencar.geo;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.net.Uri;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -63,6 +64,7 @@ editButton.setOnClickListener(new View.OnClickListener() {
         if(saveButton.getVisibility()!=View.VISIBLE){
             saveButton.setVisibility(View.VISIBLE);
             nameText.setEnabled(true);
+
         }
         else{
         saveButton.setVisibility(View.INVISIBLE);
@@ -83,6 +85,7 @@ saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void handleFault(BackendlessFault fault) {
                 Log.e("DEBUGG",fault.getMessage());
+                nameText.getBackground().setColorFilter(Color.RED, PorterDuff.Mode.SRC_ATOP);
             }
         });
         saveButton.setVisibility(View.INVISIBLE);

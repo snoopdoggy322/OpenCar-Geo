@@ -1,6 +1,8 @@
 
 package com.examples.opencar.geo;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -64,7 +66,7 @@ public class MainLogin extends AppCompatActivity {
 					String currentUserId = Backendless.UserService.loggedInUser();
 
 					if (!currentUserId.equals("")) {
-						Backendless.UserService.findById(currentUserId, new DefaultCallback<BackendlessUser>(MainLogin.this, "Logging in...") {
+						Backendless.UserService.findById(currentUserId, new DefaultCallback<BackendlessUser>(MainLogin.this, "Вход...") {
 							@Override
 							public void handleResponse(BackendlessUser currentUser) {
 									super.handleResponse(currentUser);
@@ -134,10 +136,6 @@ public class MainLogin extends AppCompatActivity {
 			msg += entry.getKey() + " : " + entry.getValue() + "\n";
 
 
-//		Intent intent = new Intent(this, LoginResult.class);
-//		intent.putExtra(LoginResult.userInfo_key, msg);
-//		intent.putExtra(LoginResult.logoutButtonState_key, true);
-		//startActivity(intent);
 
 		String whereClause = "status='забронировано' and client_id='"+user.getObjectId()+"'";
 		DataQueryBuilder queryBuilder = DataQueryBuilder.create();
@@ -183,8 +181,23 @@ public class MainLogin extends AppCompatActivity {
 
 			}
 		});
+		if ((int )user.getProperty("status")!=1){
 		startActivity( new Intent( this, GeoCategoriesListActivity.class ) );
-		finish();
+		finish();}
+		else {
+			AlertDialog.Builder builder = new AlertDialog.Builder(this);
+			builder.setMessage("Ваш аккаут проходит проверку..").setTitle("Ожидайте...");
+
+			DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					System.exit(0);
+				}
+			};
+			builder.setPositiveButton("OK",dialogClickListener);
+			AlertDialog dialog = builder.create();
+			dialog.show();
+		}
 	}
 
 	private void startLoginResult(String msg, boolean logoutButtonState)

@@ -1176,6 +1176,7 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable caricon
+drawable carmain
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1209,6 +1210,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable icon
+drawable iconcar
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1469,6 +1471,7 @@ id icon_only
 id identityField
 id ifRoom
 id image
+id imageView
 id imageView2
 id imageView3
 id imageView4
@@ -1625,6 +1628,7 @@ id submenuarrow
 id submit_area
 id subtitle
 id sum
+id swipeRefreshLayout
 id switchesAndPaymentAuthContainer
 id switchesContainer
 id tabMode
