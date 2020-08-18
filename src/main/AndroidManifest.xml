@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.examples.opencar.geo">
-
-    <uses-sdk
+    <!--
+     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="16" />
-
+    -->
     <uses-feature
         android:glEsVersion="0x00020000"
         android:required="true" />
@@ -18,7 +18,6 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-
     <permission
         android:name="com.examples.opencar.geo.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
@@ -27,7 +26,16 @@
         android:name="com.examples.opencar.geo.permission.MAPS_RECEIVE"
         android:required="false" />
 
-    <application android:label="@string/app_name">
+    <application
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".OrdersActivity"></activity>
+        <activity android:name=".RentActivity" />
+        <activity android:name=".SuccessTokenizeActivity" />
+        <activity android:name=".ValletActivity" />
+        <activity android:name=".userDataActivity" />
+        <activity android:name=".ReserveActivity" />
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -35,23 +43,24 @@
         <activity android:name=".MainLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".MapShowActivity" />
         <activity android:name=".QueryEditActivity" />
         <activity android:name=".ShowGeoPointsTextActivity" />
         <activity android:name=".FilterActivity" />
         <activity android:name=".GeoCategoriesListActivity" />
-        <activity android:name=".RestorePasswordActivity"></activity>
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".LoginResult"></activity>
+        <activity android:name=".RestorePasswordActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginResult" />
+
         <service android:name="com.backendless.AndroidService" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBxPHRqrxgDP0qoKpLStPNtLp_Otl3r6JY" />
     </application>
+
 </manifest>
-                        

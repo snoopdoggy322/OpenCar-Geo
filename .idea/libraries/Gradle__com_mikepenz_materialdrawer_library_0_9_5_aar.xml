@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mikepenz.materialdrawer:library:0.9.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/87c36477cb2943c619e69da637aeb8a9/jetified-library-0.9.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/87c36477cb2943c619e69da637aeb8a9/jetified-library-0.9.5/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz.materialdrawer/library/0.9.5/e442f665c0ecfc9b468bbdca041272ff45500635/library-0.9.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz.materialdrawer/library/0.9.5/995e8f9a4f81b169baa3454e7bf081f544b74f26/library-0.9.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

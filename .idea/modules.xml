@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/OpenCar-Geo.iml" filepath="$PROJECT_DIR$/OpenCar-Geo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OpenCar-Geo.iml" filepath="$PROJECT_DIR$/OpenCar-Geo.iml" group="OpenCar-Geo" />
+      <module fileurl="file://$PROJECT_DIR$/checkout-3.0.2-sources/OpenCar-Geo-checkout-3.0.2-sources.iml" filepath="$PROJECT_DIR$/checkout-3.0.2-sources/OpenCar-Geo-checkout-3.0.2-sources.iml" group="OpenCar-Geo/checkout-3.0.2-sources" />
+      <module fileurl="file://$PROJECT_DIR$/checkout-3.0.2-sources/checkout-3.0.2-sources.iml" filepath="$PROJECT_DIR$/checkout-3.0.2-sources/checkout-3.0.2-sources.iml" />
     </modules>
   </component>
 </project>

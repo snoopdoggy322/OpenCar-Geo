@@ -1,0 +1,363 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.examples.opencar.geo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="26" />
+9-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml
+10    <!--
+11     <uses-sdk
+12        android:minSdkVersion="16"
+13        android:targetSdkVersion="16" />
+14    -->
+15    <uses-feature
+15-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:10:5-12:35
+16        android:glEsVersion="0x00020000"
+16-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:11:9-41
+17        android:required="true" />
+17-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:12:9-32
+18
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:14:5-67
+19-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:14:22-64
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:15:5-79
+20-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:15:22-76
+21    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+21-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:16:5-98
+21-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:16:22-95
+22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+22-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:17:5-81
+22-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:17:22-78
+23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+23-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:18:5-81
+23-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:18:22-78
+24    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+24-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:19:5-79
+24-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:19:22-76
+25
+26    <permission
+26-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:21:5-23:47
+27        android:name="com.examples.opencar.geo.permission.MAPS_RECEIVE"
+27-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:22:9-72
+28        android:protectionLevel="signature" />
+28-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:23:9-44
+29
+30    <uses-permission
+30-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:25:5-27:36
+31        android:name="com.examples.opencar.geo.permission.MAPS_RECEIVE"
+31-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:26:9-72
+32        android:required="false" />
+32-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:27:9-33
+33
+34    <application
+34-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:29:5-64:19
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\e115159ef97561644a812a5336b43ee5\core-1.0.0\AndroidManifest.xml:22:18-86
+36        android:debuggable="true"
+37        android:label="@string/app_name"
+37-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:30:9-41
+38        android:testOnly="true"
+39        android:theme="@style/Theme.AppCompat.NoActionBar" >
+39-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:31:9-59
+40        <activity android:name="com.examples.opencar.geo.OrdersActivity" />
+40-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:32:9-61
+40-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:32:19-49
+41        <activity android:name="com.examples.opencar.geo.RentActivity" />
+41-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:33:9-50
+41-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:33:19-47
+42        <activity android:name="com.examples.opencar.geo.SuccessTokenizeActivity" />
+42-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:34:9-61
+42-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:34:19-58
+43        <activity android:name="com.examples.opencar.geo.ValletActivity" />
+43-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:35:9-52
+43-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:35:19-49
+44        <activity android:name="com.examples.opencar.geo.userDataActivity" />
+44-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:36:9-54
+44-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:36:19-51
+45        <activity android:name="com.examples.opencar.geo.ReserveActivity" />
+45-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:37:9-53
+45-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:37:19-50
+46
+47        <meta-data
+47-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:39:9-41:69
+48            android:name="com.google.android.gms.version"
+48-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:40:13-58
+49            android:value="@integer/google_play_services_version" />
+49-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:41:13-66
+50
+51        <activity android:name="com.examples.opencar.geo.MainLogin" >
+51-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:43:9-49:20
+51-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:43:19-44
+52            <intent-filter>
+52-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:44:13-48:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:45:17-69
+53-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:45:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:47:17-77
+55-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:47:27-74
+56            </intent-filter>
+57        </activity>
+58        <activity android:name="com.examples.opencar.geo.MapShowActivity" />
+58-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:50:9-53
+58-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:50:19-50
+59        <activity android:name="com.examples.opencar.geo.QueryEditActivity" />
+59-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:51:9-55
+59-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:51:19-52
+60        <activity android:name="com.examples.opencar.geo.ShowGeoPointsTextActivity" />
+60-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:52:9-63
+60-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:52:19-60
+61        <activity android:name="com.examples.opencar.geo.FilterActivity" />
+61-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:53:9-52
+61-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:53:19-49
+62        <activity android:name="com.examples.opencar.geo.GeoCategoriesListActivity" />
+62-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:54:9-63
+62-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:54:19-60
+63        <activity android:name="com.examples.opencar.geo.RestorePasswordActivity" />
+63-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:55:9-61
+63-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:55:19-58
+64        <activity android:name="com.examples.opencar.geo.RegisterActivity" />
+64-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:56:9-54
+64-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:56:19-51
+65        <activity android:name="com.examples.opencar.geo.LoginResult" />
+65-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:57:9-49
+65-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:57:19-46
+66
+67        <service android:name="com.backendless.AndroidService" />
+67-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:59:9-66
+67-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:59:18-63
+68
+69        <meta-data
+69-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:61:9-63:71
+70            android:name="com.google.android.geo.API_KEY"
+70-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:62:13-58
+71            android:value="AIzaSyBxPHRqrxgDP0qoKpLStPNtLp_Otl3r6JY" />
+71-->D:\Ucheba\diplom\OpenCar-Geo\src\main\AndroidManifest.xml:63:13-68
+72
+73        <activity
+73-->[com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b21fea5ccbe84927292a33547015e354\jetified-checkout-3.0.2\AndroidManifest.xml:35:9-37:47
+74            android:name="ru.yandex.money.android.sdk.utils.WebViewActivity"
+74-->[com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b21fea5ccbe84927292a33547015e354\jetified-checkout-3.0.2\AndroidManifest.xml:36:13-77
+75            android:theme="@style/ym_Theme" />
+75-->[com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b21fea5ccbe84927292a33547015e354\jetified-checkout-3.0.2\AndroidManifest.xml:37:13-44
+76        <activity
+76-->[com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b21fea5ccbe84927292a33547015e354\jetified-checkout-3.0.2\AndroidManifest.xml:38:9-40:59
+77            android:name="ru.yandex.money.android.sdk.impl.PendingIntentActivity"
+77-->[com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b21fea5ccbe84927292a33547015e354\jetified-checkout-3.0.2\AndroidManifest.xml:39:13-82
+78            android:theme="@style/ym_Theme.Translucent" />
+78-->[com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b21fea5ccbe84927292a33547015e354\jetified-checkout-3.0.2\AndroidManifest.xml:40:13-56
+79        <activity
+79-->[com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b21fea5ccbe84927292a33547015e354\jetified-checkout-3.0.2\AndroidManifest.xml:41:9-43:59
+80            android:name="ru.yandex.money.android.sdk.impl.CheckoutActivity"
+80-->[com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b21fea5ccbe84927292a33547015e354\jetified-checkout-3.0.2\AndroidManifest.xml:42:13-77
+81            android:theme="@style/ym_Theme.Translucent" />
+81-->[com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b21fea5ccbe84927292a33547015e354\jetified-checkout-3.0.2\AndroidManifest.xml:43:13-56
+82        <activity
+82-->[com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b21fea5ccbe84927292a33547015e354\jetified-checkout-3.0.2\AndroidManifest.xml:44:9-46:47
+83            android:name="ru.yandex.money.android.sdk.impl.contract.SavePaymentMethodInfoActivity"
+83-->[com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b21fea5ccbe84927292a33547015e354\jetified-checkout-3.0.2\AndroidManifest.xml:45:13-99
+84            android:theme="@style/ym_Theme" />
+84-->[com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b21fea5ccbe84927292a33547015e354\jetified-checkout-3.0.2\AndroidManifest.xml:46:13-44
+85
+86        <meta-data
+86-->[com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b21fea5ccbe84927292a33547015e354\jetified-checkout-3.0.2\AndroidManifest.xml:48:9-50:36
+87            android:name="com.google.android.gms.wallet.api.enabled"
+87-->[com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b21fea5ccbe84927292a33547015e354\jetified-checkout-3.0.2\AndroidManifest.xml:49:13-69
+88            android:value="true" /> <!-- Needs to be explicitly declared on P+ -->
+88-->[com.yandex.money:checkout:3.0.2] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\b21fea5ccbe84927292a33547015e354\jetified-checkout-3.0.2\AndroidManifest.xml:50:13-33
+89        <uses-library
+89-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f044f59a4f4cb01f9f82deaf5d40e00a\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+90            android:name="org.apache.http.legacy"
+90-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f044f59a4f4cb01f9f82deaf5d40e00a\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+91            android:required="false" />
+91-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f044f59a4f4cb01f9f82deaf5d40e00a\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+92
+93        <activity
+93-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\8765ee310d2b175c8ed2c7a28072810e\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+94            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+94-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\8765ee310d2b175c8ed2c7a28072810e\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+95            android:exported="false"
+95-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\8765ee310d2b175c8ed2c7a28072810e\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+96            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+96-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\8765ee310d2b175c8ed2c7a28072810e\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+97        <activity
+97-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:13:9-16:64
+98            android:name="com.yandex.authsdk.internal.AuthSdkActivity"
+98-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:14:13-71
+99            android:label=""
+99-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:15:13-29
+100            android:theme="@style/Theme.AuthSdk.Transparent" />
+100-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:16:13-61
+101        <activity
+101-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:17:9-19:46
+102            android:name="com.yandex.authsdk.internal.BrowserLoginActivity"
+102-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:18:13-76
+103            android:launchMode="singleTop" />
+103-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:19:13-43
+104        <activity
+104-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:20:9-23:52
+105            android:name="com.yandex.authsdk.internal.WebViewLoginActivity"
+105-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:21:13-76
+106            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+106-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:22:13-83
+107            android:theme="@style/Theme.AuthSdk" />
+107-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:23:13-49
+108        <activity
+108-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:24:9-49:20
+109            android:name="com.yandex.authsdk.internal.BrowserDataActivity"
+109-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:25:13-75
+110            android:theme="@style/Theme.AuthSdk.Transparent" >
+110-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:26:13-61
+111            <intent-filter android:autoVerify="true" >
+111-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:27:13-37:29
+111-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:27:28-53
+112                <action android:name="android.intent.action.VIEW" />
+112-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:28:17-69
+112-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:28:25-66
+113
+114                <category android:name="android.intent.category.DEFAULT" />
+114-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:30:17-76
+114-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:30:27-73
+115                <category android:name="android.intent.category.BROWSABLE" />
+115-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:31:17-78
+115-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:31:27-75
+116
+117                <data
+117-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:33:17-36:46
+118                    android:host="yxваш id приложения в Яндекс.Паспорте.oauth.yandex.ru"
+118-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:34:21-73
+119                    android:path="/auth/finish"
+119-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:35:21-48
+120                    android:scheme="https" />
+120-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:36:21-43
+121            </intent-filter>
+122            <intent-filter>
+122-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:38:13-48:29
+123                <action android:name="android.intent.action.VIEW" />
+123-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:28:17-69
+123-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:28:25-66
+124
+125                <category android:name="android.intent.category.DEFAULT" />
+125-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:30:17-76
+125-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:30:27-73
+126                <category android:name="android.intent.category.BROWSABLE" />
+126-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:31:17-78
+126-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:31:27-75
+127
+128                <data
+128-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:33:17-36:46
+129                    android:path="/auth/finish"
+129-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:35:21-48
+130                    android:scheme="yxваш id приложения в Яндекс.Паспорте" />
+130-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:36:21-43
+131            </intent-filter>
+132        </activity>
+133
+134        <meta-data
+134-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:51:9-53:51
+135            android:name="com.yandex.auth.CLIENT_ID"
+135-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:52:13-53
+136            android:value="ваш id приложения в Яндекс.Паспорте" />
+136-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:53:13-48
+137        <meta-data
+137-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:54:9-56:47
+138            android:name="com.yandex.auth.OAUTH_HOST"
+138-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:55:13-54
+139            android:value="oauth.yandex.ru" /> <!-- Yandex Mobile Metrica Analytics: common service -->
+139-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:56:13-44
+140        <service
+140-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:26:9-43:19
+141            android:name="com.yandex.metrica.MetricaService"
+141-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:27:13-61
+142            android:enabled="true"
+142-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:28:13-35
+143            android:exported="true"
+143-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:29:13-36
+144            android:process=":Metrica" >
+144-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:30:13-39
+145            <intent-filter>
+145-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:32:13-38:29
+146                <category android:name="android.intent.category.DEFAULT" />
+146-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:30:17-76
+146-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:30:27-73
+147
+148                <action android:name="com.yandex.metrica.IMetricaService" />
+148-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:35:17-77
+148-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:35:25-74
+149
+150                <data android:scheme="metrica" />
+150-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:33:17-36:46
+150-->[com.yandex.android:authsdk:2.1.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\f47ced0bac2ee8a610dc44500c624ddd\jetified-authsdk-2.1.1\AndroidManifest.xml:36:21-43
+151            </intent-filter>
+152
+153            <meta-data
+153-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:40:13-42:38
+154                android:name="metrica:api:level"
+154-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:41:17-49
+155                android:value="74" />
+155-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:42:17-35
+156        </service>
+157        <service
+157-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:44:9-60:19
+158            android:name="com.yandex.metrica.ConfigurationService"
+158-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:45:13-67
+159            android:enabled="true"
+159-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:46:13-35
+160            android:exported="false"
+160-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:47:13-37
+161            android:process=":Metrica" >
+161-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:48:13-39
+162            <meta-data
+162-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:50:13-52:37
+163                android:name="metrica:configuration:api:level"
+163-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:51:17-63
+164                android:value="3" />
+164-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:52:17-34
+165
+166            <intent-filter>
+166-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:54:13-59:29
+167
+168                <!-- This action was used by old background location collecting and should not be used again -->
+169                <!-- <action android:name="com.yandex.metrica.configuration.ACTION_START"/> -->
+170                <action android:name="com.yandex.metrica.configuration.ACTION_INIT" />
+170-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:58:17-87
+170-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:58:25-84
+171            </intent-filter>
+172        </service>
+173        <service
+173-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:61:9-67:19
+174            android:name="com.yandex.metrica.ConfigurationJobService"
+174-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:62:13-70
+175            android:enabled="true"
+175-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:63:13-35
+176            android:exported="false"
+176-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:64:13-37
+177            android:permission="android.permission.BIND_JOB_SERVICE"
+177-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:65:13-69
+178            android:process=":Metrica" >
+178-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:66:13-39
+179        </service> <!-- Yandex Mobile Metrica Analytics: main receiver -->
+180        <receiver
+180-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:70:9-78:20
+181            android:name="com.yandex.metrica.MetricaEventHandler"
+181-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:71:13-66
+182            android:enabled="true"
+182-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:72:13-35
+183            android:exported="true" >
+183-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:73:13-36
+184            <intent-filter>
+184-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:75:13-77:29
+185                <action android:name="com.android.vending.INSTALL_REFERRER" />
+185-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:76:17-79
+185-->[com.yandex.android:mobmetricalib:3.5.1] C:\Users\Vlad\.gradle\caches\transforms-2\files-2.1\0f38a5774cac5d043a2f7a41814b2fcb\jetified-mobmetricalib-3.5.1\AndroidManifest.xml:76:25-76
+186            </intent-filter>
+187        </receiver>
+188    </application>
+189
+190</manifest>

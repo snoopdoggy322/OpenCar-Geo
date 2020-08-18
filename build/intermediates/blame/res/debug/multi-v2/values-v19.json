@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v19\\values-v19.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\87c36477cb2943c619e69da637aeb8a9\\jetified-library-0.9.5\\res\\values-v19\\values.xml",
+                    "from": {
+                        "startLines": "4,7,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "213,423,548",
+                        "endLines": "4,9,12",
+                        "endColumns": "51,12,12",
+                        "endOffsets": "260,543,680"
+                    },
+                    "to": {
+                        "startLines": "2,3,6",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,107,232",
+                        "endLines": "2,5,8",
+                        "endColumns": "51,12,12",
+                        "endOffsets": "102,227,364"
+                    }
+                }
+            ]
+        }
+    ]
+}

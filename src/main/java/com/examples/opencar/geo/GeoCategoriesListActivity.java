@@ -5,8 +5,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -66,7 +66,7 @@ public class GeoCategoriesListActivity extends Activity
   {
     geoCategoriesListView = (ListView) findViewById( R.id.geoCategoriesList );
     Intent mapIntent = new Intent( GeoCategoriesListActivity.this, MapShowActivity.class );
-    mapIntent.putExtra( "category","geoservice_sample" );
+    mapIntent.putExtra( "category","readyCars" );
     startActivity( mapIntent );
     finish();
     geoCategoriesListView.setOnItemClickListener( new AdapterView.OnItemClickListener()

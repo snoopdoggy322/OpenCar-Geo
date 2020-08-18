@@ -4,13 +4,75 @@
             "outputFile": "D:\\Ucheba\\diplom\\OpenCar-Geo\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\ea6a19d9d58a21175394f89289a6981c\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\815dba35729137a0f735880dd630cca0\\appcompat-1.0.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
                         "startOffsets": "55,124,193,263,337,413,472,543",
                         "endColumns": "68,68,69,73,75,58,70,67",
                         "endOffsets": "119,188,258,332,408,467,538,606"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "96,165,234,304,378,454,513,584",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "160,229,299,373,449,508,579,647"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\87c36477cb2943c619e69da637aeb8a9\\jetified-library-0.9.5\\res\\values-sw600dp-v13\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "217",
+                        "endColumns": "63",
+                        "endOffsets": "276"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1214",
+                        "endColumns": "63",
+                        "endOffsets": "1273"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\9d33acae53a8de85852693c372a6eb42\\material-1.0.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,115,185,256,328,386,444,553,617,680",
+                        "endLines": "2,3,4,5,6,7,9,10,11,15",
+                        "endColumns": "59,69,70,71,57,57,10,63,62,10",
+                        "endOffsets": "110,180,251,323,381,439,548,612,675,847"
+                    },
+                    "to": {
+                        "startLines": "11,12,13,14,15,16,17,19,25,26",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "652,712,782,853,925,983,1041,1150,1507,1570",
+                        "endLines": "11,12,13,14,15,16,18,19,25,29",
+                        "endColumns": "59,69,70,71,57,57,10,63,62,10",
+                        "endOffsets": "707,777,848,920,978,1036,1145,1209,1565,1737"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vlad\\.gradle\\caches\\transforms-2\\files-2.1\\b21fea5ccbe84927292a33547015e354\\jetified-checkout-3.0.2\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,96,164,212,259,325",
+                        "endLines": "2,3,4,5,6,9",
+                        "endColumns": "40,67,47,46,65,12",
+                        "endOffsets": "91,159,207,254,320,493"
+                    },
+                    "to": {
+                        "startLines": "2,21,22,23,24,30",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,1278,1346,1394,1441,1742",
+                        "endLines": "2,21,22,23,24,32",
+                        "endColumns": "40,67,47,46,65,12",
+                        "endOffsets": "91,1341,1389,1436,1502,1910"
                     }
                 }
             ]

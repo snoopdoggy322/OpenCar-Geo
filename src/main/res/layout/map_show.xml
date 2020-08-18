@@ -1,54 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-    android:paddingLeft="@dimen/dp16"
-    android:paddingRight="@dimen/dp16">
+    android:paddingLeft="@dimen/material_drawer_margin"
+    android:paddingRight="@dimen/material_drawer_margin">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="@dimen/material_drawer_margin"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingTop="@dimen/material_drawer_margin"
+        android:transitionName="actionBar" />
 
     <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="@dimen/dp48"
-        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
         android:layout_marginTop="@dimen/dp4"
-        android:layout_marginBottom="@dimen/dp4">
+        android:layout_marginBottom="@dimen/dp4"
+        android:gravity="center_vertical"
+        android:visibility="gone">
 
         <Button
             android:id="@+id/filterButton"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="@dimen/dp144"
             android:layout_height="@dimen/dp48"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="false"
             android:layout_centerVertical="true"
-            android:text="@string/filter_button_text" />
-
-        <Button
-            android:id="@+id/showAsTextButton"
-            android:layout_width="@dimen/dp144"
-            android:layout_height="@dimen/dp48"
-            android:layout_alignTop="@+id/filterButton"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:text="@string/show_as_text_button_text"
-            android:visibility="invisible"
-            tools:visibility="visible" />
+            android:text="@string/filter_button_text"
+            android:visibility="invisible" />
 
     </RelativeLayout>
 
-    <fragment
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.MapFragment"
-        android:layout_width="match_parent"
-        android:layout_height="302dp"
-        android:layout_marginTop="@dimen/dp4" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
 
-    <TextView
-        android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/showAsTextButton"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/stat_notify_sync"
+            android:visibility="visible"
+            app:layout_anchor="@+id/map"
+            app:layout_anchorGravity="top|center"
+            tools:visibility="visible" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp4" />
+<include layout="@layout/bottom_sheet" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:src="@android:drawable/ic_menu_upload"
+            app:layout_anchor="@+id/bottom_sheet"
+            app:layout_anchorGravity="end" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
 </LinearLayout>
